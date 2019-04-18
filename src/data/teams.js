@@ -1,7 +1,7 @@
 export const TEAMS = [
   {
     name: "red",
-    points: 8,
+    points: 0,
     items: []
   },
   {

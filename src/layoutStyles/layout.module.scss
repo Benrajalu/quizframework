@@ -1,0 +1,94 @@
+@import "./_helpers.scss";
+
+.phaseTitle {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-height: 5vh;
+  text-align: center;
+  padding: 0 3rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  > h1 {
+    @include marker(3.5rem, #fff);
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  > p {
+    @include lato(2rem, 700, $navy);
+    text-transform: uppercase;
+    background: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+
+    strong {
+      color: $purple;
+      font-weight: 900;
+    }
+  }
+}
+
+.phaseContents {
+  flex-grow: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+
+  .contents {
+    display: block;
+    width: auto;
+    max-width: 100%;
+  }
+
+  &.top {
+    justify-content: flex-start;
+  }
+}
+
+.sliderSlide {
+  height: 85vh;
+  display: flex !important;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+
+  > div {
+    background: #fff;
+    border-radius: 5rem;
+    flex-grow: 2;
+    width: 80%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+:global(.slick-next) {
+  right: 2rem;
+  z-index: 10;
+}
+
+:global(.slick-prev) {
+  left: 2rem;
+  z-index: 10;
+}
