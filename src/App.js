@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Phase1 from "./phases/Phase1/Phase1";
 import Phase2 from "./phases/Phase2/Phase2";
+import Shop from "./phases/Shop/Shop";
 
 import styles from "./App.module.scss";
 
@@ -11,6 +12,7 @@ import shape4 from "./media/shape4.svg";
 import shape3 from "./media/shape3.svg";
 import shape2 from "./media/shape2.svg";
 import shape1 from "./media/shape1.svg";
+import Menu from "./components/Menu/Menu";
 
 class App extends Component {
   render() {
@@ -18,7 +20,9 @@ class App extends Component {
       <main className={styles.mainContainer}>
         <Router>
           <Route path="/" exact component={Phase1} />
-          <Route path="/phase2" exact component={Phase2} />
+          <Route path="/phase2" component={Phase2} />
+          <Route path="/shop" component={Shop} />
+          <Menu />
         </Router>
 
         <div className={styles.scene}>

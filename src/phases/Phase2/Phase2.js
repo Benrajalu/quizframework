@@ -1,14 +1,34 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  Route
+} from "react-router-dom";
 import TeamBar from "../../components/TeamBar/TeamBar";
+import Category from "./Category";
+
+import { CATEGORIES } from "../../data/phase2";
 
 class Phase2 extends Component {
   render() {
+    const {
+      match,
+    } = this.props;
+    console.log(this.props);
     return (
       <div>
-        <TeamBar />
-        <p>Hey phase 2 is cool too</p>
-        <Link to="/">Back to phase 1</Link>
+        <nav>
+          <TeamBar />
+          <Link to="/shop">Magasin</Link>
+        </nav>
+
+        <ul>
+          {CATEGORIES.map(category => <li key={category.url}><NavLink to={`${match.url}/${category.url}`}>{category.name}</NavLink></li>)}
+        </ul>
+
+        <div>
+          <Route path={`${match.path}/:category`} component={Category} />
+        </div>
       </div>
     );
   }
