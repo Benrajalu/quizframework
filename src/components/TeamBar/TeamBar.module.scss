@@ -1,0 +1,76 @@
+@import "../../layoutStyles/helpers";
+
+.teamBar {
+  display: flex;
+  flex-flow: row;
+  justify-content: stretch;
+  align-items: stretch;
+
+  .team {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .presentation {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .data {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 1rem;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .name {
+    @include lato(1.6rem, 900, $white);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .badge {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    border: 0.2rem solid #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include lato(1.7rem, 900, $white);
+
+    p {
+      text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+      position: relative;
+      top: -1px;
+    }
+
+    &.blue {
+      background: #8ed4fd;
+    }
+
+    &.red {
+      background: #ff6d6a;
+    }
+
+    &.green {
+      background: $green;
+    }
+  }
+}

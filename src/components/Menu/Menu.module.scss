@@ -1,110 +1,156 @@
 @import "../../layoutStyles/helpers";
 
 .menu {
-    position: fixed;
-    bottom: 0;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    left: 0;
-    flex-flow: column;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  flex-flow: column;
 
-    &.isOpened {
-        .entries {
-            height: 10rem;
-        }
+  &.isOpened {
+    .entries {
+      height: 10rem;
     }
+
+    .button {
+      opacity: 1;
+    }
+  }
 }
 
 .button {
-    background: $navy;
-    border-radius: 3rem 3rem 0 0;
-    margin: 0 auto;
+  background: $navy;
+  border-radius: 3rem 3rem 0 0;
+  margin: 0 auto;
+  color: #fff;
+  border: 1px solid $blue;
+  border-bottom: 0px;
+  padding: 1rem 2rem;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .entries {
-    height: 0;
-    overflow: hidden;
+  height: 0;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  width: 100%;
+  background: $navy;
+  box-shadow: 0 -0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .shopLink {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    background: $blue;
+    padding: 1rem 2rem 1.3rem;
+    @include marker(1.4rem, $navy);
+    text-decoration: none;
+    border-radius: 2rem;
+    transform: translateY(-50%);
     transition: all 200ms ease-out;
-    width: 100%;
-    background: $navy;
-    box-shadow: 0 -0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
 
-    ul {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: -1rem 2rem 0 2rem;
-
-        li {
-            display: block;
-            position: relative;
-            line-height: 5.5rem;
-        }
-
-        a {
-            @include marker(2rem, #fff);
-            text-decoration: none;
-            padding: 0 4rem;
-            text-align: center;
-
-            &:after {
-                content: '';
-                width: 100%;
-                height: 1rem;
-                background: #fff;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-
-            &:before {
-                content: '';
-                width: 2.5rem;
-                height: 2.5rem;
-                background: #fff;
-                border: 0.5rem solid $navy;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%) translateY(8px);
-                border-radius: 100%;
-                z-index: 2;
-                box-sizing: border-box;
-            }
-
-            &:global(.active) {
-                &:before {
-                    background: $purple;
-                }
-            }
-        }
-
-        li:first-child a {
-            padding: 0 6rem 0 0;
-            text-align: left;
-
-            &:before {
-                left: 0;
-            }
-        }
-
-        li:last-child a {
-            padding: 0 0 0 6rem;
-            text-align: right;
-
-            &:before {
-                left: auto;
-                right: 0;
-                transform: translateX(50%) translateY(8px);
-            }
-        }
+    &:hover {
+      transform: translateY(-52%);
     }
+
+    &:global(.active) {
+      background: $purple;
+      color: #fff;
+    }
+  }
+
+  .mainNav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1rem 2rem 0 2rem;
+
+    li {
+      display: block;
+      position: relative;
+      line-height: 5.5rem;
+      width: 15rem;
+    }
+
+    a {
+      @include marker(2rem, #fff);
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+
+      span {
+        width: 100%;
+        flex-grow: 1;
+        margin-bottom: 1rem;
+      }
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 0.4rem;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        flex-grow: 2;
+      }
+
+      &:before {
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        background: #fff;
+        border: 0.5rem solid $navy;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(8px);
+        border-radius: 100%;
+        z-index: 2;
+        box-sizing: border-box;
+      }
+
+      &:global(.active) {
+        &:before {
+          background: $purple;
+        }
+      }
+    }
+
+    li:first-child a {
+      &:after {
+        width: 50%;
+        flex-grow: 0;
+        transform: translateX(100%);
+      }
+    }
+
+    li:last-child a {
+      &:after {
+        width: 50%;
+        flex-grow: 0;
+      }
+    }
+  }
 }

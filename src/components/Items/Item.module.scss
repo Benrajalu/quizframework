@@ -1,0 +1,26 @@
+.item {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+
+  img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+  }
+
+  &.small {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
