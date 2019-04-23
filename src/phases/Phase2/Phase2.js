@@ -11,7 +11,6 @@ import styles from "./Phase2.module.scss";
 class Phase2 extends Component {
   render() {
     const { match } = this.props;
-    console.log(this.props);
     return (
       <div>
         <div className={layout.phaseTitle}>

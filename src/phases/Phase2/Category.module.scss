@@ -1,3 +1,10 @@
 .category {
   flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 200rem;
+  width: 100%;
+  margin: 0 auto;
 }

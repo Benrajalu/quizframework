@@ -23,7 +23,7 @@ class TeamBar extends Component {
               {!isEmpty(team.items) && (
                 <div className={styles.items}>
                   {team.items.map(item => (
-                    <Item size="small" type={item} />
+                    <Item size="small" type={item} key={item} />
                   ))}
                 </div>
               )}

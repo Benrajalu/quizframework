@@ -22,7 +22,7 @@ class Item extends Component {
       crystal: crystal,
       bow: bow
     };
-    console.log(styles[size]);
+
     return (
       <figure className={classnames(styles.item, styles[size])}>
         <img src={images[type]} alt="" />

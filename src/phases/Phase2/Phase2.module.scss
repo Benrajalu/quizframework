@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-self: center;
     width: 100%;
-    max-width: 120rem;
+    max-width: 180rem;
     margin: 0 auto 3rem;
     li {
       padding: 0 2rem;
@@ -26,7 +26,7 @@
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      height: 8rem;
+      height: 9rem;
       background: $white;
       width: 100%;
       border-radius: 0.3rem;
@@ -35,7 +35,7 @@
       top: 0;
       position: relative;
       text-decoration: none;
-      @include lato(2rem, 400, $navy);
+      @include lato(2.2rem, 700, $navy);
 
       &:global(.active) {
         background: $purple;
