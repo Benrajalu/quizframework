@@ -23,6 +23,7 @@ class Category extends Component {
             points={question.points}
             question={question.question}
             key={`${question.question.text}--${urlCategory}--${index}`}
+            replied={question.replied}
           />
         )}
       </div>

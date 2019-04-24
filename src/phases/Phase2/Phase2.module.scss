@@ -16,9 +16,9 @@
     align-self: center;
     width: 100%;
     max-width: 180rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 5rem;
     li {
-      padding: 0 2rem;
+      padding: 0 1rem;
       flex-grow: 2;
     }
     a {
@@ -35,7 +35,7 @@
       top: 0;
       position: relative;
       text-decoration: none;
-      @include lato(2.2rem, 700, $navy);
+      @include lato(2.7rem, 700, $navy);
 
       &:global(.active) {
         background: $purple;

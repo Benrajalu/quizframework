@@ -39,21 +39,21 @@
   }
 
   .name {
-    @include lato(1.8rem, 900, $white);
+    @include lato(2.2rem, 900, $white);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
 
   .badge {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5.7rem;
+    height: 5.5rem;
     border-radius: 100%;
     border: 0.2rem solid #fff;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    @include lato(1.9rem, 900, $white);
+    @include lato(2.4rem, 900, $white);
 
     p {
       text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
@@ -62,15 +62,15 @@
     }
 
     &.blue {
-      background: #8ed4fd;
+      background: linear-gradient(to bottom, #8ed4fd, darken(#8ed4fd, 10%));
     }
 
     &.red {
-      background: #ff6d6a;
+      background: linear-gradient(to bottom, #ff6d6a, darken(#ff6d6a, 10%));
     }
 
     &.green {
-      background: $green;
+      background: linear-gradient(to bottom, $green, darken($green, 10%));
     }
   }
 }

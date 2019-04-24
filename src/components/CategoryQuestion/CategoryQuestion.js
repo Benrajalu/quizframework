@@ -3,33 +3,48 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import styles from './CategoryQuestion.module.scss';
+import QuestionModal from "../QuestionModal/QuestionModal";
 
 function CategoryQuestion (props) {
+  const {
+    replied,
+    points,
+    question,
+  } = props;
+
   const [isSecret, setSecret] = useState(props.status === "hidden");
+
   return (
     <div className={styles.categoryQuestion}>
       <button
         onClick={() => setSecret(false)}
-        className={classnames(styles.overlay, {[styles.hidden]: isSecret})}
+        className={classnames(
+            styles.overlay,
+            {[styles.disabled]: replied},
+          )
+        }
+        disabled={replied}
       >
-        {props.points}
+        <span>Cette question vaut...</span>
+        <strong>{points} point{points > 1 && 's'}</strong>
       </button>
-      <div>
-        {props.question.text}
-        <button
-          onClick={() => setSecret(true)}
-        >
-          Fermer
-        </button>
-      </div>
+      {!isSecret &&
+        <QuestionModal
+          closeHandler={() => setSecret(true)}
+          question={question}
+          points={points}
+        />
+      }
     </div>
   );
 }
 
 CategoryQuestion.propTypes = {
   status: PropTypes.string.isRequired,
+  replied: PropTypes.bool.isRequired,
   points: PropTypes.number.isRequired,
   question: PropTypes.object.isRequired,
-};
+}
+
 
 export default CategoryQuestion;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component, Fragment} from "react";
 import { NavLink, Route } from "react-router-dom";
 import TeamBar from "../../components/TeamBar/TeamBar";
 import Category from "./Category";
@@ -12,7 +12,7 @@ class Phase2 extends Component {
   render() {
     const { match } = this.props;
     return (
-      <div>
+      <Fragment>
         <div className={layout.phaseTitle}>
           <h1>Manche 2</h1>
           <TeamBar />
@@ -32,7 +32,7 @@ class Phase2 extends Component {
             <Route path={`${match.path}/:category`} component={Category} />
           </div>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }

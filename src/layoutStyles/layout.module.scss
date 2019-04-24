@@ -3,7 +3,7 @@
 .phaseTitle {
   flex-grow: 1;
   flex-shrink: 0;
-  height: 7vh;
+  height: 9vh;
   text-align: center;
   padding: 0 3rem;
   display: flex;
@@ -38,7 +38,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0 0 2rem 0;
 
   .contents {
     display: block;
