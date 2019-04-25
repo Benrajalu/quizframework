@@ -1,3 +1,4 @@
+@import '../../layoutStyles/helpers';
 .questionModal {
   position: fixed;
   top: 0;
@@ -12,23 +13,43 @@
   z-index: 99;
 
   .content {
-    background: #fff;
     width: 80%;
-    max-width: 200rem;
     height: 100%;
     max-height: 80vh;
-    border-radius: 3rem;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+    .closeButton {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      background: transparent;
+      border: 0;
+      color: $purple;
+      font-size: 2.5rem;
+      cursor: pointer;
 
-    img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-      max-height: 80%;
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .points {
+      position: absolute;
+      top: 0rem;
+      left: 0rem;
+      padding: 1.5rem 2rem;
+      @include lato(2rem, 700, $white);
+      text-transform: uppercase;
+      background: $navy;
+      border-radius: 1rem 0 0 0;
+
+      strong {
+        @include lato(2rem, 900, $purple);
+      }
     }
   }
 }

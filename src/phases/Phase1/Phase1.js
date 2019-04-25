@@ -3,9 +3,8 @@ import Slider from "react-slick";
 import classnames from "classnames";
 import { SLIDES } from "../../data/phase1";
 
-import { pickAslide } from "../../components/Slides/SlidePicker/SlidePicker";
-
 import layout from "../../layoutStyles/layout.module.scss";
+import Slides from "../../components/Slides/Slides";
 
 class Phase1 extends Component {
   state = {
@@ -21,23 +20,20 @@ class Phase1 extends Component {
       afterChange: current => this.setState({ activeSlide: current })
     };
 
-    const slides = pickAslide(SLIDES);
     return (
       <Fragment>
         <div className={layout.phaseTitle}>
           <h1>Manche 1</h1>
           <p>
             Question <strong>{this.state.activeSlide + 1}</strong>/
-            {slides.length}
+            {SLIDES.length}
           </p>
         </div>
         <div className={classnames(layout.phaseContents)}>
           <div className={layout.contents}>
             <Slider {...settings}>
-              {slides.map((slide, index) => (
-                <div className={layout.sliderSlide} key={index}>
-                  {slide}
-                </div>
+              {SLIDES.map((slide, index) => (
+                <Slides slide={slide} key={slide.question + index} />
               ))}
             </Slider>
           </div>

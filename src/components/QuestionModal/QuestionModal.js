@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import classnames from "classnames";
 
 import styles from './QuestionModal.module.scss';
 import ReactAudioPlayer from "react-audio-player";
+import layout from "../../layoutStyles/layout.module.scss";
 
 class QuestionModal extends Component {
   componentDidMount() {
@@ -21,25 +23,25 @@ class QuestionModal extends Component {
     const { question, points } = this.props;
     return (
       <div className={styles.questionModal}>
-        <div className={styles.content}>
+        <div className={classnames(styles.content, layout.questionSlide)}>
           <button
             onClick={() => this.handleExit()}
+            className={styles.closeButton}
           >
             <i className="fas fa-times" />
           </button>
-          <p>Pour {points} point{points > 1 && 's'}</p>
-          <p>{question.text}</p>
+          <p className={styles.points}>Pour <strong>{points}</strong> point{points > 1 && 's'}</p>
 
+          <p className={layout.questionText}>{question.text}</p>
           {question.audio && <ReactAudioPlayer src={question.audio} controls />}
           {question.image && <img src={question.image} alt="" />}
           {question.choices && (
-            <ul>
+            <ul className={layout.choices}>
               {question.choices.map(choice => (
                 <li key={choice.replace(" ", "")}>{choice}</li>
               ))}
             </ul>
           )}
-
         </div>
       </div>
     );
