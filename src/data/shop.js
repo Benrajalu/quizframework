@@ -11,21 +11,21 @@ export const SHOPDATA = [
     image: sword,
     cost: 15,
     available: 3,
-    description: "Utilisé sur une équipe adverse, le poignard force celle-ci à passer son tour",
+    description: "Utilisé sur une équipe adverse, le poignard force celle-ci à passer son tour.",
   },
   {
     name: "Bouclier",
     image: shield,
     cost: 15,
     available: 3,
-    description: "Le bouclier vous protège en cas de mauvaise réponse à une question"
+    description: "Le bouclier vous protège en cas de mauvaise réponse à une question."
   },
   {
     name: "Boule de cristal",
     image: crystal,
     cost: 10,
     available: 3,
-    description: "La boule de cristal vous permet de révéler toutes les questions d'une catégorie"
+    description: "La boule de cristal vous permet de révéler toutes les questions d'une catégorie."
   },
   {
     name: "Poison",
@@ -39,7 +39,7 @@ export const SHOPDATA = [
     image: letter,
     cost: 10,
     available: 3,
-    description: "Le passe droit vous permet de choisir une autre question dans la catégorie si celle proposée ne convient pas",
+    description: "Le passe droit vous permet de choisir une autre question dans la catégorie si celle proposée ne convient pas.",
   },
   {
     name: "Arc",

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import ReactAudioPlayer from "react-audio-player";
 import layout from "../../layoutStyles/layout.module.scss";
+import ShapeChoice from "../ShapeChoice/ShapeChoice";
 
 class Slides extends Component {
   render() {
@@ -26,6 +27,7 @@ class Slides extends Component {
               ))}
             </ul>
           )}
+          <ShapeChoice question={question} className={layout.decorator}/>
         </div>
       </div>
     );

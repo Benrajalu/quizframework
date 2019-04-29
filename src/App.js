@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Phase1 from "./phases/Phase1/Phase1";
 import Phase2 from "./phases/Phase2/Phase2";
+import Phase3 from "./phases/Phase3/Phase3";
+import Phase4 from "./phases/Phase4/Phase4";
 import Shop from "./phases/Shop/Shop";
 
 import styles from "./App.module.scss";
@@ -14,6 +16,7 @@ import shape2 from "./media/shape2.svg";
 import shape1 from "./media/shape1.svg";
 import Menu from "./components/Menu/Menu";
 
+
 class App extends Component {
   render() {
     return (
@@ -21,7 +24,9 @@ class App extends Component {
         <Router>
           <Route path="/" exact component={Phase1} />
           <Route path="/phase2" component={Phase2} />
-          <Route path="/shop" component={Shop} />
+          <Route path="/phase3" component={Phase3} />
+          <Route path="/phase4" component={Phase4} />
+          <Route path="/store" component={Shop} />
           <Menu />
         </Router>
 

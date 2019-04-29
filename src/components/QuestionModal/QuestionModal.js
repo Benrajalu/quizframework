@@ -5,6 +5,7 @@ import classnames from "classnames";
 import styles from './QuestionModal.module.scss';
 import ReactAudioPlayer from "react-audio-player";
 import layout from "../../layoutStyles/layout.module.scss";
+import ShapeChoice from "../ShapeChoice/ShapeChoice";
 
 class QuestionModal extends Component {
   componentDidMount() {
@@ -30,7 +31,7 @@ class QuestionModal extends Component {
           >
             <i className="fas fa-times" />
           </button>
-          <p className={styles.points}>Pour <strong>{points}</strong> point{points > 1 && 's'}</p>
+          <p className={styles.points}><strong>{points}</strong> point{points > 1 && 's'}</p>
 
           <p className={layout.questionText}>{question.text}</p>
           {question.audio && <ReactAudioPlayer src={question.audio} controls />}
@@ -42,6 +43,7 @@ class QuestionModal extends Component {
               ))}
             </ul>
           )}
+          <ShapeChoice question={question.text} className={layout.decorator}/>
         </div>
       </div>
     );

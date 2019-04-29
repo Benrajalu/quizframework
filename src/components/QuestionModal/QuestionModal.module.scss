@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -39,16 +39,25 @@
 
     .points {
       position: absolute;
-      top: 0rem;
-      left: 0rem;
+      top: -2rem;
+      left: -5rem;
       padding: 1.5rem 2rem;
-      @include lato(2rem, 700, $white);
+      @include marker(2rem, $white);
       text-transform: uppercase;
       background: $navy;
-      border-radius: 1rem 0 0 0;
+      border-radius: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 10rem;
+      height: 10rem;
+      transform: rotate(-8deg);
+      box-shadow: 0 0.2rem 0.7rem 0.3rem rgba(0, 0, 0, 0.3);
 
       strong {
-        @include lato(2rem, 900, $purple);
+        @include marker(4rem, $purple);
+        margin-top: -1rem;
       }
     }
   }

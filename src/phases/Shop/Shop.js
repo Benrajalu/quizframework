@@ -1,37 +1,49 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component, Fragment } from "react";
+import classnames from 'classnames';
 import TeamBar from "../../components/TeamBar/TeamBar";
 import { SHOPDATA } from "../../data/shop";
 
+import layout from "../../layoutStyles/layout.module.scss";
+import styles from "./Shop.module.scss";
+
 class Shop extends Component {
+  stockIndicator = (number) => {
+    let availables = +number;
+    const marks = [];
+    while (availables > 0) {
+      availables = availables - 1;
+      marks.push(1);
+    }
+    return marks;
+  };
   render() {
     return (
-      <div>
-        <nav>
-          <TeamBar />
-          <Link to="/">Manche 1</Link>
-          <Link to="/phase2">Manche 2</Link>
-        </nav>
-
-        <div>
+      <Fragment>
+        <div className={layout.phaseTitle}>
           <h1>Le magasin</h1>
-          <ul>
+          <TeamBar />
+        </div>
+        <div className={layout.phaseContents}>
+          <ul className={styles.shopList}>
             {SHOPDATA.map(item => (
               <li key={item.name}>
-                <div className={item.available > 0 ? 'visible' : 'notVisible'}>
-                  <h3>{item.name}</h3>
+                <div className={classnames({[styles.notVisible]: item.available === 0})}>
                   <figure>
                     <img src={item.image} alt=""/>
-                    <p>{item.cost}</p>
+                    <p><strong>{item.cost}</strong> points</p>
+                    <div>{this.stockIndicator(item.available).map((item, index) => <i key={index} />)}</div>
                   </figure>
-                  <p>{item.description}</p>
+                  <article>
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                  </article>
                 </div>
               </li>
             ))}
           </ul>
         </div>
 
-      </div>
+      </Fragment>
     );
   }
 }
