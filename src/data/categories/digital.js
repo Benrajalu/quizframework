@@ -1,5 +1,6 @@
 import audioSample from "../media/limbus.mp3";
 import imageSample from "../media/image.png";
+import disney from "../media/disney.jpg";
 
 export const DIGITAL = [
   {
@@ -39,9 +40,10 @@ export const DIGITAL = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quel est le nom du troisième jeu de la saga Zelda ?",
-      type: "text",
-      answer: "Answer copy"
+      text: "Quel est le point comment entre ces personnages ? ",
+      type: "image",
+      image: disney,
+      answer: "Disney"
     }
   },
   {
