@@ -7,9 +7,9 @@ export const SPORT = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
+      text: "Quelle équipe a gagné la coupe de France de football cette année ?",
       type: "text",
-      answer: "Answer copy"
+      answer: "Rennes"
     }
   },
   {
@@ -44,5 +44,25 @@ export const SPORT = [
       type: "qcm",
       answer: "Answer copy"
     }
-  }
+  },
+  {
+    points: 5,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Quelle équipe a gagné la coupe de France de football cette année ?",
+      type: "text",
+      answer: "Rennes"
+    }
+  },
+  {
+    points: 10,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Quelle équipe a gagné la coupe de France de football cette année ?",
+      type: "text",
+      answer: "Rennes"
+    }
+  },
 ];

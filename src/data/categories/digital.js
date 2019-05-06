@@ -7,9 +7,9 @@ export const DIGITAL = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
+      text: "Comment s'appelait le fondateur d'Apple ?",
       type: "text",
-      answer: "Answer copy"
+      answer: "Steve Jobs"
     }
   },
   {
@@ -35,6 +35,16 @@ export const DIGITAL = [
     }
   },
   {
+    points: 1,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Quel est le nom du troisième jeu de la saga Zelda ?",
+      type: "text",
+      answer: "Answer copy"
+    }
+  },
+  {
     points: 5,
     status: "hidden",
     replied: false,
@@ -44,5 +54,15 @@ export const DIGITAL = [
       type: "qcm",
       answer: "Answer copy"
     }
-  }
+  },
+  {
+    points: 10,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Quel est le nom du troisième jeu de la saga Zelda ?",
+      type: "text",
+      answer: "Answer copy"
+    }
+  },
 ];

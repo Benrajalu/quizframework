@@ -8,9 +8,9 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
+      text: "Comment s'appelle le film des les Nuls ?",
       type: "text",
-      answer: "Answer copy"
+      answer: "La Cité de la Peur"
     }
   },
   {
@@ -36,7 +36,7 @@ export const FILM = [
     }
   },
   {
-    points: 5,
+    points: 1,
     status: "hidden",
     replied: false,
     question: {
@@ -56,5 +56,15 @@ export const FILM = [
       type: "image",
       answer: "Answer copy"
     }
-  }
+  },
+  {
+    points: 10,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Comment s'appelle le film des les Nuls ?",
+      type: "text",
+      answer: "La Cité de la Peur"
+    }
+  },
 ];

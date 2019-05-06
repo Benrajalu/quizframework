@@ -1,4 +1,4 @@
-import audioSample from "../media/limbus.mp3";
+import billieJean from "../media/billieJean.mp3";
 import imageSample from "../media/image.png";
 
 export const MUSIC = [
@@ -7,8 +7,9 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      type: "text",
+      text: "Nommez le nom de l'artiste et du morceau",
+      audio: billieJean,
+      type: "audio",
       answer: "Answer copy"
     }
   },
@@ -17,8 +18,8 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      audio: audioSample,
+      text: "Nommez le nom de l'artiste et du morceau",
+      audio: billieJean,
       type: "audio",
       answer: "Answer copy"
     }
@@ -28,9 +29,20 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
-      type: "image",
+      text: "Nommez le nom de l'artiste et du morceau",
+      audio: billieJean,
+      type: "audio",
+      answer: "Answer copy"
+    }
+  },
+  {
+    points: 1,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Nommez le nom de l'artiste et du morceau",
+      audio: billieJean,
+      type: "audio",
       answer: "Answer copy"
     }
   },
@@ -39,10 +51,21 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
-      type: "qcm",
+      text: "Nommez le nom de l'artiste et du morceau",
+      audio: billieJean,
+      type: "audio",
       answer: "Answer copy"
     }
-  }
+  },
+  {
+    points: 10,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Nommez le nom de l'artiste et du morceau",
+      audio: billieJean,
+      type: "audio",
+      answer: "Answer copy"
+    }
+  },
 ];

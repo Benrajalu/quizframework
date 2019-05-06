@@ -7,9 +7,9 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
+      text: "En quelle année a eu lieu la révolution Française ?",
       type: "text",
-      answer: "Answer copy"
+      answer: "1789"
     }
   },
   {
@@ -35,6 +35,16 @@ export const HISTORY = [
     }
   },
   {
+    points: 1,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Comment s'appelle le film des les Nuls ?",
+      type: "text",
+      answer: "La Cité de la Peur"
+    }
+  },
+  {
     points: 5,
     status: "hidden",
     replied: false,
@@ -44,5 +54,15 @@ export const HISTORY = [
       type: "qcm",
       answer: "Answer copy"
     }
-  }
+  },
+  {
+    points: 10,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Comment s'appelle le film des les Nuls ?",
+      type: "text",
+      answer: "La Cité de la Peur"
+    }
+  },
 ];

@@ -7,9 +7,9 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
+      text: "Nommez le précédent président de la République",
       type: "text",
-      answer: "Answer copy"
+      answer: "François Hollande"
     }
   },
   {
@@ -35,7 +35,7 @@ export const NEWS = [
     }
   },
   {
-    points: 5,
+    points: 1,
     status: "hidden",
     replied: false,
     question: {
@@ -46,7 +46,7 @@ export const NEWS = [
     }
   },
   {
-    points: 10,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -57,7 +57,7 @@ export const NEWS = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
