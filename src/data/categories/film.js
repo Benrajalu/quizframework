@@ -1,6 +1,6 @@
-import audioSample from "../media/limbus.mp3";
-import image2 from "../media/image2.png";
-import imageSample from "../media/image.png";
+import corniaud from "../media/corniaud.mp3";
+import sylvioForel from "../media/sylvioForel.jpg";
+import disney from "../media/disney.jpg";
 
 export const FILM = [
   {
@@ -8,7 +8,7 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Comment s'appelle le film des les Nuls ?",
+      text: "Comment s'appelle le film de les Nuls ?",
       type: "text",
       answer: "La Cité de la Peur"
     }
@@ -18,10 +18,10 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      audio: audioSample,
+      text: "De quel film est extrait ce clip ?",
+      audio: corniaud,
       type: "audio",
-      answer: "Answer copy"
+      answer: "Le Corniaud"
     }
   },
   {
@@ -29,10 +29,9 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
-      type: "image",
-      answer: "Answer copy"
+      text: "Quel acteur a le rôle principal dans le Meilleur Film des Oscars 2019 ?",
+      type: "text",
+      answer: "Viggo Mortensen"
     }
   },
   {
@@ -40,10 +39,10 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
-      type: "qcm",
-      answer: "Answer copy"
+      text: "Quel est le point comment entre ces personnages ? ",
+      type: "image",
+      image: disney,
+      answer: "Disney"
     }
   },
   {
@@ -51,10 +50,9 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Qui est cet homme, est-il dangereux ?",
-      image: image2,
-      type: "image",
-      answer: "Answer copy"
+      text: "Docteur House souffre d'une de ses jambes, laquelle ? ",
+      type: "text",
+      answer: "Droite"
     }
   },
   {
@@ -62,9 +60,10 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Comment s'appelle le film des les Nuls ?",
-      type: "text",
-      answer: "La Cité de la Peur"
+      text: "Qui est cet homme ? ",
+      type: "image",
+      image: sylvioForel,
+      answer: "Syrio Forel, maitre d'arme de Winterfell"
     }
   },
 ];

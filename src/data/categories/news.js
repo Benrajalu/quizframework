@@ -1,5 +1,4 @@
-import audioSample from "../media/limbus.mp3";
-import imageSample from "../media/image.png";
+import castaner from "../media/castaner.jpg";
 
 export const NEWS = [
   {
@@ -17,10 +16,9 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      audio: audioSample,
-      type: "audio",
-      answer: "Answer copy"
+      text: "Quelle est l'actuelle capitale du Sri Lanka ?",
+      type: "text",
+      answer: "Colombo"
     }
   },
   {
@@ -28,9 +26,9 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
-      type: "image",
+      text: "Quel était le taux de croissance du PIB Français en 2017 ?",
+      choices: ['1,6%', '1,8%', '0,7%'],
+      type: "qcm",
       answer: "Answer copy"
     }
   },
@@ -39,10 +37,10 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
-      type: "qcm",
-      answer: "Answer copy"
+      text: "Qui est cet homme et quel est son poste ?",
+      image: castaner,
+      type: "image",
+      answer: "Christophe Castaner, ministre de l'intérieur"
     }
   },
   {
@@ -50,10 +48,9 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
-      type: "image",
-      answer: "Answer copy"
+      text: "Qui a été couronné roi de Thaïlande récemment ?",
+      type: "text",
+      answer: "Rama X (Maha Vajiralongkorn)"
     }
   },
   {
@@ -61,10 +58,9 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
-      type: "qcm",
-      answer: "Answer copy"
+      text: "Qui est l'actuel président du gouvernement Russe ?",
+      type: "text",
+      answer: "Dimitri Medvedev"
     }
   },
 ];

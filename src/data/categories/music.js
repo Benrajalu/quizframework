@@ -1,5 +1,9 @@
 import billieJean from "../media/billieJean.mp3";
-import imageSample from "../media/image.png";
+import wannabe from "../media/wannabe.mp3";
+import acdc from "../media/acdc.mp3";
+import moneyForNothing from "../media/moneyForNothing.mp3";
+import machistador from "../media/machistador.mp3";
+import escape from "../media/escape.mp3";
 
 export const MUSIC = [
   {
@@ -7,10 +11,10 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Nommez le nom de l'artiste et du morceau",
+      text: "Nommez l'artiste et le titre du morceau",
       audio: billieJean,
       type: "audio",
-      answer: "Answer copy"
+      answer: "Billie Jean Michael Jackson"
     }
   },
   {
@@ -18,10 +22,10 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Nommez le nom de l'artiste et du morceau",
-      audio: billieJean,
+      text: "Nommez le morceau et la première Spice Girl à chanter dans cet extrait",
+      audio: wannabe,
       type: "audio",
-      answer: "Answer copy"
+      answer: "Wannabe - Mel B"
     }
   },
   {
@@ -29,10 +33,10 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Nommez le nom de l'artiste et du morceau",
-      audio: billieJean,
+      text: "Qui est le guitariste qui joue sur ce morceau ?",
+      audio: acdc,
       type: "audio",
-      answer: "Answer copy"
+      answer: "Angus Young"
     }
   },
   {
@@ -40,10 +44,10 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Nommez le nom de l'artiste et du morceau",
-      audio: billieJean,
+      text: "Nommez le groupe et le titre du morceau",
+      audio: moneyForNothing,
       type: "audio",
-      answer: "Answer copy"
+      answer: "Dire Straits, Money for Nothing"
     }
   },
   {
@@ -51,10 +55,10 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Nommez le nom de l'artiste et du morceau",
-      audio: billieJean,
+      text: "Completez avec la prochaine phrase de cette chanson",
+      audio: machistador,
       type: "audio",
-      answer: "Answer copy"
+      answer: "J'ai la poupée d'ET dans ma Golf GTI"
     }
   },
   {
@@ -62,10 +66,10 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Nommez le nom de l'artiste et du morceau",
-      audio: billieJean,
+      text: "Nommez l'artiste et le titre du morceau",
+      audio: escape,
       type: "audio",
-      answer: "Answer copy"
+      answer: "Escape (piña colada song) - Rupert Holmes"
     }
   },
 ];
