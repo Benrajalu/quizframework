@@ -1,5 +1,4 @@
-import audioSample from "../media/limbus.mp3";
-import imageSample from "../media/image.png";
+import stadeFrance from "../media/stadeFrance.jpg";
 
 export const SPORT = [
   {
@@ -17,10 +16,9 @@ export const SPORT = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      audio: audioSample,
-      type: "audio",
-      answer: "Answer copy"
+      text: "Nommez dans l'ordre le top 3 ATP actuel",
+      type: "text",
+      answer: "Djokovic, Nadal, Federer"
     }
   },
   {
@@ -28,21 +26,21 @@ export const SPORT = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
-      type: "image",
-      answer: "Answer copy"
-    }
-  },
-  {
-    points: 5,
-    status: "hidden",
-    replied: false,
-    question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
+      text: "Parmis ces épreuves, laquelle fera son entrée aux JO de Tokyo en 2020 ?",
+      choices: ["Le golf", "Le rugby", "Le basket 3v3"],
       type: "qcm",
-      answer: "Answer copy"
+      answer: "Basket 3v3"
+    }
+  },
+  {
+    points: 1,
+    status: "hidden",
+    replied: false,
+    question: {
+      text: "Comment se nomme ce stade ?",
+      image: stadeFrance,
+      type: "image",
+      answer: "Stade de France"
     }
   },
   {
@@ -50,9 +48,9 @@ export const SPORT = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quelle équipe a gagné la coupe de France de football cette année ?",
+      text: "Combien de points rapporte un waza-ari au Judo ?",
       type: "text",
-      answer: "Rennes"
+      answer: "10"
     }
   },
   {
@@ -60,9 +58,9 @@ export const SPORT = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quelle équipe a gagné la coupe de France de football cette année ?",
+      text: "Dans quelle discipline évolue le Français le plus titré sur la scène internationale ?",
       type: "text",
-      answer: "Rennes"
+      answer: "Planche à voile"
     }
   },
 ];
