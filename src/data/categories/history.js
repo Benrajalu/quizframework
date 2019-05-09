@@ -1,5 +1,6 @@
-import audioSample from "../media/limbus.mp3";
-import imageSample from "../media/image.png";
+import app18juin from "../media/app18juin.mp3";
+import kheops from "../media/kheops.jpg";
+import maroc from "../media/maroc.jpg";
 
 export const HISTORY = [
   {
@@ -17,10 +18,10 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      audio: audioSample,
-      type: "audio",
-      answer: "Answer copy"
+      text: "À quel pays appartient ce drapeau ?",
+      image: maroc,
+      type: "image",
+      answer: "Maroc"
     }
   },
   {
@@ -28,10 +29,10 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
+      text: "Quelle est la plus grande pyramide d'Egypte ?",
+      image: kheops,
       type: "image",
-      answer: "Answer copy"
+      answer: "Pyramide de Kheops"
     }
   },
   {
@@ -39,9 +40,9 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Comment s'appelle le film des les Nuls ?",
+      text: "Quel est le plus grand fleuve du monde ?",
       type: "text",
-      answer: "La Cité de la Peur"
+      answer: "L'amazone (accepté le Nil)"
     }
   },
   {
@@ -49,10 +50,10 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
-      type: "qcm",
-      answer: "Answer copy"
+      text: "Identifiez ce document historique",
+      type: "audio",
+      audio: app18juin,
+      answer: "Appel du 18 juin 1940, Général du Gaulle"
     }
   },
   {
@@ -60,9 +61,9 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Comment s'appelle le film des les Nuls ?",
+      text: "Qui gouverne le Canada ?",
       type: "text",
-      answer: "La Cité de la Peur"
+      answer: "Elizabeth II"
     }
   },
 ];

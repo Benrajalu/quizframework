@@ -1,6 +1,5 @@
-import audioSample from "../media/limbus.mp3";
-import imageSample from "../media/image.png";
-import disney from "../media/disney.jpg";
+import playsation1 from "../media/playsation1.mp3";
+import applis from "../media/applis.jpg";
 
 export const DIGITAL = [
   {
@@ -18,10 +17,10 @@ export const DIGITAL = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      audio: audioSample,
-      type: "audio",
-      answer: "Answer copy"
+      text: "Quelle était la capacité de stockage standard du premier iPod ?",
+      choices: ['10Go', '8Go', '5Go'],
+      type: "qcm",
+      answer: "5go"
     }
   },
   {
@@ -29,10 +28,10 @@ export const DIGITAL = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      image: imageSample,
-      type: "image",
-      answer: "Answer copy"
+      text: "Quel est ce son ?",
+      audio: playsation1,
+      type: "audio",
+      answer: "Démarrage playstation 1"
     }
   },
   {
@@ -40,10 +39,10 @@ export const DIGITAL = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quel est le point comment entre ces personnages ? ",
-      type: "image",
-      image: disney,
-      answer: "Disney"
+      text: "Quelle marque vend le plus de téléphones dans le monde ?",
+      type: "qcm",
+      choices: ["Huawei", "Samsung", "Apple"],
+      answer: "Samsung > Apple > Huawei"
     }
   },
   {
@@ -51,10 +50,10 @@ export const DIGITAL = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Coucou ?",
-      choices: ["Choix 1", "Choix 2", "Choix 3"],
-      type: "qcm",
-      answer: "Answer copy"
+      text: "Nommez ces trois applications",
+      type: "image",
+      image: applis,
+      answer: "Tinder, Evernote, Sushi Shop"
     }
   },
   {
@@ -64,7 +63,7 @@ export const DIGITAL = [
     question: {
       text: "Quel est le nom du troisième jeu de la saga Zelda ?",
       type: "text",
-      answer: "Answer copy"
+      answer: "A link to the past"
     }
   },
 ];
