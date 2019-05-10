@@ -25,7 +25,7 @@ export const SHOPDATA = [
     image: crystal,
     cost: 10,
     available: 3,
-    description: "La boule de cristal vous permet de révéler toutes les questions d'une catégorie..pour vous et les autres."
+    description: "La boule de cristal vous permet d'obtenir un indice pour la question de votre choix avant de la révéler."
   },
   {
     name: "Poison",

@@ -33,7 +33,7 @@ export const MUSIC = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Qui est le guitariste qui joue sur ce morceau ?",
+      text: "Qui est le guitariste qui joue cette intro ?",
       audio: acdc,
       type: "audio",
       answer: "Angus Young"

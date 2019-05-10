@@ -4,6 +4,7 @@ import Phase1 from "./phases/Phase1/Phase1";
 import Phase2 from "./phases/Phase2/Phase2";
 import Phase3 from "./phases/Phase3/Phase3";
 import Phase4 from "./phases/Phase4/Phase4";
+import Rankings from "./phases/Rankings/Rankings";
 import Shop from "./phases/Shop/Shop";
 
 import styles from "./App.module.scss";
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path="/phase2" component={Phase2} />
           <Route path="/phase3" component={Phase3} />
           <Route path="/phase4" component={Phase4} />
+          <Route path="/rankings" component={Rankings} />
           <Route path="/store" component={Shop} />
           <Menu />
         </Router>

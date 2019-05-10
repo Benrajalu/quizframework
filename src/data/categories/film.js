@@ -39,7 +39,7 @@ export const FILM = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quel est le point comment entre ces personnages ? ",
+      text: "Quel est le point commun entre ces personnages ? ",
       type: "image",
       image: disney,
       answer: "Disney"

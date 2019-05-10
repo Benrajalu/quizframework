@@ -60,7 +60,7 @@ export const SPORT = [
     question: {
       text: "Dans quelle discipline évolue le Français le plus titré sur la scène internationale ?",
       type: "text",
-      answer: "Planche à voile"
+      answer: "Planche à voile (Antoine Albeau, 23 titres champion du monde)"
     }
   },
 ];

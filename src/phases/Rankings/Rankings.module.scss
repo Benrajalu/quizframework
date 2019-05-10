@@ -1,0 +1,14 @@
+@import "../../layoutStyles/helpers";
+
+.rankings {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+
+  > h1 {
+    @include marker(8rem, $white);
+    margin-bottom: 4rem;
+  }
+}

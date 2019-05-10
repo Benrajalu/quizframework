@@ -52,7 +52,7 @@ class Menu extends Component {
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/" exact>
+              <NavLink to="/rankings" exact>
                 <span>Classement</span>
               </NavLink>
             </li>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { sortBy, reverse, isEmpty } from "lodash";
+import PropTypes from 'prop-types';
 import classnames from "classnames";
 import { TEAMS } from "../../data/teams";
 
@@ -10,7 +11,7 @@ class TeamBar extends Component {
   render() {
     const orderedTeams = reverse(sortBy(TEAMS, ["points"]));
     return (
-      <div className={styles.teamBar}>
+      <div className={classnames(styles.teamBar, {[styles.full] : this.props.size === 'full'})}>
         {orderedTeams.map(team => (
           <div className={styles.team} key={team.name}>
             <div className={styles.presentation}>
@@ -34,5 +35,13 @@ class TeamBar extends Component {
     );
   }
 }
+
+TeamBar.propTypes = {
+  size: PropTypes.string,
+};
+
+TeamBar.defaultProps = {
+  size: null,
+};
 
 export default TeamBar;

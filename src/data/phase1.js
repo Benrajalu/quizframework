@@ -110,7 +110,7 @@ export const SLIDES = [
   },
   {
     type: "question",
-    question: "Quelle équipe de foot a gagné le plus de coupe du monde ?",
+    question: "Quelle équipe de foot a gagné le plus de coupes du monde ?",
     answer: "Le Brésil"
   },
   {
