@@ -9,21 +9,21 @@ export const SHOPDATA = [
   {
     name: "Poignard",
     image: sword,
-    cost: 15,
+    cost: 10,
     available: 3,
     description: "Utilisé sur une équipe adverse, le poignard force celle-ci à passer son tour.",
   },
   {
     name: "Bouclier",
     image: shield,
-    cost: 15,
+    cost: 10,
     available: 3,
     description: "Le bouclier vous protège en cas de mauvaise réponse à une question."
   },
   {
     name: "Boule de cristal",
     image: crystal,
-    cost: 10,
+    cost: 5,
     available: 3,
     description: "La boule de cristal vous permet d'obtenir un indice pour la question de votre choix avant de la révéler."
   },
@@ -37,14 +37,14 @@ export const SHOPDATA = [
   {
     name: "Passe-droit",
     image: letter,
-    cost: 10,
+    cost: 5,
     available: 3,
     description: "Le passe droit vous permet de choisir une autre question dans la catégorie si celle proposée ne convient pas.",
   },
   {
     name: "Arc",
     image: bow,
-    cost: 10,
+    cost: 5,
     available: 3,
     description: "L'arc double vos gains en cas de bonne réponse...mais double vos pertes si vous vous trompez."
   },

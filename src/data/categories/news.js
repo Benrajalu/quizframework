@@ -2,7 +2,7 @@ import castaner from "../media/castaner.jpg";
 
 export const NEWS = [
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -12,7 +12,7 @@ export const NEWS = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -22,18 +22,18 @@ export const NEWS = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {
       text: "Quel était le taux de croissance du PIB Français en 2017 ?",
       choices: ['1,6%', '1,8%', '0,7%'],
       type: "qcm",
-      answer: "Answer copy"
+      answer: "1,8%"
     }
   },
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -44,7 +44,7 @@ export const NEWS = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -54,7 +54,7 @@ export const NEWS = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {

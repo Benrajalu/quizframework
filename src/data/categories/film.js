@@ -4,7 +4,7 @@ import disney from "../media/disney.jpg";
 
 export const FILM = [
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -14,7 +14,7 @@ export const FILM = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -25,7 +25,7 @@ export const FILM = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {
@@ -35,7 +35,7 @@ export const FILM = [
     }
   },
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -46,7 +46,7 @@ export const FILM = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -56,7 +56,7 @@ export const FILM = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {

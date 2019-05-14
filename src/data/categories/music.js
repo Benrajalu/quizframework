@@ -7,7 +7,7 @@ import escape from "../media/escape.mp3";
 
 export const MUSIC = [
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -18,7 +18,7 @@ export const MUSIC = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -29,7 +29,7 @@ export const MUSIC = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {
@@ -40,7 +40,7 @@ export const MUSIC = [
     }
   },
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -51,7 +51,7 @@ export const MUSIC = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -62,7 +62,7 @@ export const MUSIC = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {

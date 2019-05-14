@@ -4,7 +4,7 @@ import maroc from "../media/maroc.jpg";
 
 export const HISTORY = [
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -14,7 +14,7 @@ export const HISTORY = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -25,7 +25,7 @@ export const HISTORY = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {
@@ -36,7 +36,7 @@ export const HISTORY = [
     }
   },
   {
-    points: 1,
+    points: 5,
     status: "hidden",
     replied: false,
     question: {
@@ -46,7 +46,7 @@ export const HISTORY = [
     }
   },
   {
-    points: 5,
+    points: 10,
     status: "hidden",
     replied: false,
     question: {
@@ -57,7 +57,7 @@ export const HISTORY = [
     }
   },
   {
-    points: 10,
+    points: 15,
     status: "hidden",
     replied: false,
     question: {

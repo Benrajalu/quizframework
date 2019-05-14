@@ -50,7 +50,7 @@ export const SLIDES = [
   {
     type: "qcm",
     question: "Combien y a-t'il d'habitants au Mozambique ?",
-    choices: ['29,67 Milliards', '32,89 Milliards', '19,37 Milliards'],
+    choices: ['29,67 Millions', '32,89 Millions', '19,37 Millions'],
     answer: [1],
   },
   {
