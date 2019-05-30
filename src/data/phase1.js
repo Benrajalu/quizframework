@@ -44,8 +44,8 @@ export const SLIDES = [
   },
   {
     type: "question",
-    question: "Combien de parfums de bonbon Jelly Beans existe-t-il ?",
-    answer: "50."
+    question: "Quel artiste célèbre a créé le logo de Chupa Chups ?",
+    answer: "Salvador Dali"
   },
   {
     type: "qcm",
@@ -94,13 +94,13 @@ export const SLIDES = [
   },
   {
     type: "question",
-    question: "Combien coûte un sandwich jambon-fromage dans un TGV ?",
-    answer: "6,40€"
+    question: "Combien coûte un sandwich triangle genre jambon-fromage au wagon bar SNCF ?",
+    answer: "6,40€ https://lebar.sncf.com/"
   },
   {
     type: "question",
-    question: "En quelle année l'Union Européenne a-t-elle été fondée ?",
-    answer: "1958 traité de Rome"
+    question: "En quelle année a été signé le traité de Rome ?",
+    answer: "1958"
   },
   {
     type: "audio",

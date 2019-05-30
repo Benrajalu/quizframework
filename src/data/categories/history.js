@@ -29,10 +29,10 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quelle est la plus grande pyramide d'Egypte ?",
+      text: "Quelle est la plus grande pyramide d'Egypte et quelle est sa taille à 10m près ?",
       image: kheops,
       type: "image",
-      answer: "Pyramide de Kheops"
+      answer: "Pyramide de Kheops 230x146m"
     }
   },
   {
@@ -61,7 +61,7 @@ export const HISTORY = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Qui gouverne le Canada ?",
+      text: "Qui gouverne actuellement le Canada ?",
       type: "text",
       answer: "Elizabeth II"
     }

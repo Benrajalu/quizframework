@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Landing from "./phases/Landing/Landing";
 import Phase1 from "./phases/Phase1/Phase1";
 import Phase2 from "./phases/Phase2/Phase2";
 import Phase3 from "./phases/Phase3/Phase3";
@@ -23,7 +24,8 @@ class App extends Component {
     return (
       <main className={styles.mainContainer}>
         <Router>
-          <Route path="/" exact component={Phase1} />
+          <Route path="/" exact component={Landing} />
+          <Route path="/phase1" component={Phase1} />
           <Route path="/phase2" component={Phase2} />
           <Route path="/phase3" component={Phase3} />
           <Route path="/phase4" component={Phase4} />

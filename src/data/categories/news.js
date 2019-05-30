@@ -26,10 +26,9 @@ export const NEWS = [
     status: "hidden",
     replied: false,
     question: {
-      text: "Quel était le taux de croissance du PIB Français en 2017 ?",
-      choices: ['1,6%', '1,8%', '0,7%'],
-      type: "qcm",
-      answer: "1,8%"
+      text: "Quel est le nom du vainqueur de la palme d'or 2019 ?",
+      type: "text",
+      answer: "Bong Joon-ho (pour Parasite)"
     }
   },
   {

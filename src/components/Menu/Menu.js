@@ -33,6 +33,11 @@ class Menu extends Component {
           <ul className={style.mainNav}>
             <li onClick={() => this.onClickhandler()}>
               <NavLink to="/" exact>
+                <span>Landing</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to="/phase1" exact>
                 <span>Manche 1</span>
               </NavLink>
             </li>
