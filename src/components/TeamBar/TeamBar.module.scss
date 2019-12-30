@@ -1,4 +1,4 @@
-@import "../../layoutStyles/helpers";
+@import '../../layoutStyles/helpers';
 
 .teamBar {
   display: flex;
@@ -39,7 +39,7 @@
   }
 
   .name {
-    @include lato(2.2rem, 900, $white);
+    @include raleway(2.2rem, 900, $white);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
@@ -53,7 +53,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    @include lato(2.4rem, 900, $white);
+    @include raleway(2.4rem, 900, $white);
 
     p {
       text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
@@ -70,7 +70,7 @@
     }
 
     &.green {
-      background: linear-gradient(to bottom, $green, darken($green, 10%));
+      background: linear-gradient(to bottom, $red, darken($red, 10%));
     }
   }
 
@@ -109,7 +109,6 @@
     }
 
     .team:first-child {
-
       .badge {
         width: 9rem;
         height: 9rem;
@@ -122,7 +121,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: -2.5rem;
         left: 50%;

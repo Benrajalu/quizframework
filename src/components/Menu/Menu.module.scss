@@ -1,4 +1,4 @@
-@import "../../layoutStyles/helpers";
+@import '../../layoutStyles/helpers';
 
 .menu {
   position: fixed;
@@ -23,11 +23,11 @@
 }
 
 .button {
-  background: $navy;
+  background: $black;
   border-radius: 3rem 3rem 0 0;
   margin: 0 auto;
   color: #fff;
-  border: 1px solid $blue;
+  border: 1px solid $copy;
   border-bottom: 0px;
   padding: 1rem 2rem;
   opacity: 0.2;
@@ -48,7 +48,7 @@
   overflow: hidden;
   transition: all 200ms ease-out;
   width: 100%;
-  background: $navy;
+  background: $black;
   box-shadow: 0 -0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   display: flex;
   flex-flow: row nowrap;
@@ -60,9 +60,9 @@
     position: absolute;
     right: 3rem;
     top: 50%;
-    background: $blue;
+    background: $copy;
     padding: 1rem 2rem 1.3rem;
-    @include marker(1.4rem, $navy);
+    @include rubik(1.4rem, $black);
     text-decoration: none;
     border-radius: 2rem;
     transform: translateY(-50%);
@@ -73,7 +73,7 @@
     }
 
     &:global(.active) {
-      background: $purple;
+      background: $black;
       color: #fff;
     }
   }
@@ -93,7 +93,7 @@
     }
 
     a {
-      @include marker(2rem, #fff);
+      @include rubik(2rem, #fff);
       text-decoration: none;
       text-align: center;
       display: flex;
@@ -107,7 +107,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
         width: 100%;
         height: 0.4rem;
         background: #fff;
@@ -117,11 +117,11 @@
       }
 
       &:before {
-        content: "";
+        content: '';
         width: 2.5rem;
         height: 2.5rem;
         background: #fff;
-        border: 0.5rem solid $navy;
+        border: 0.5rem solid $black;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -133,7 +133,7 @@
 
       &:global(.active) {
         &:before {
-          background: $purple;
+          background: $black;
         }
       }
     }

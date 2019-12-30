@@ -1,4 +1,4 @@
-@import "../../layoutStyles/helpers";
+@import '../../layoutStyles/helpers';
 
 .categoryQuestion {
   display: flex;
@@ -8,7 +8,7 @@
   margin: 0 1rem 3rem;
   border-radius: 3rem;
   box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
-  background: $navy;
+  background: $black;
 
   .overlay {
     position: absolute;
@@ -24,7 +24,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    @include marker(3rem, $navy);
+    @include rubik(3rem, $red);
     cursor: pointer;
 
     &:disabled {
@@ -33,7 +33,7 @@
     }
 
     strong {
-      @include marker(5rem, $purple);
+      @include rubik(5rem, $red);
     }
   }
 }

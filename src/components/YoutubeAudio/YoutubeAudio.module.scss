@@ -1,0 +1,56 @@
+@import '../../layoutStyles/helpers';
+
+.hiddenIframe {
+  position: absolute;
+  top: -9999px;
+  left: -99999px;
+  width: 0;
+}
+
+.player {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+  max-width: 45rem;
+
+  button {
+    height: 5.5rem;
+    width: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: $white;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    margin-right: 2rem;
+    background: $red;
+    cursor: pointer;
+    border: 0;
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.3rem rgba($red, 0.5);
+    }
+  }
+
+  progress {
+    flex-grow: 2;
+    margin-bottom: 0;
+    -webkit-appearance: none;
+    height: 1rem;
+
+    &::-webkit-progress-bar {
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+    }
+
+    &::-webkit-progress-value {
+      background: $red;
+      border-radius: 6px;
+    }
+  }
+}

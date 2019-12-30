@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -28,7 +28,7 @@
       right: 3rem;
       background: transparent;
       border: 0;
-      color: $purple;
+      color: $red;
       font-size: 2.5rem;
       cursor: pointer;
 
@@ -42,9 +42,9 @@
       top: -2rem;
       left: -5rem;
       padding: 1.5rem 2rem;
-      @include marker(2rem, $white);
+      @include rubik(2rem, $white);
       text-transform: uppercase;
-      background: $navy;
+      background: $red;
       border-radius: 100%;
       display: flex;
       flex-flow: column;
@@ -56,7 +56,7 @@
       box-shadow: 0 0.2rem 0.7rem 0.3rem rgba(0, 0, 0, 0.3);
 
       strong {
-        @include marker(4rem, $purple);
+        @include rubik(4rem, $red);
         margin-top: -1rem;
       }
     }

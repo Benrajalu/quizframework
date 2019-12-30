@@ -1,4 +1,56 @@
-@import "./_helpers.scss";
+@import './_helpers.scss';
+
+.phaseBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 11rem 5rem;
+
+  .introTitle {
+    @include rubik(9.2rem, $white);
+
+    p {
+      @include raleway(2.8rem, 400, $white);
+      margin-bottom: 1rem;
+    }
+  }
+
+  a {
+    @extend %button;
+  }
+}
+
+.phaseBackgroundActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: row nowrap;
+  filter: blur(5px);
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, $black, rgba(0, 0, 0, 0));
+    z-index: 1;
+  }
+}
 
 .phaseTitle {
   flex-grow: 1;
@@ -11,34 +63,40 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
+  z-index: 2;
 
   > h1 {
-    @include marker(3.5rem, #fff);
+    @include rubik(3.5rem, #fff);
     flex-grow: 1;
     text-align: left;
   }
 
   > p {
-    @include lato(2rem, 700, $navy);
+    @include raleway(2rem, 700, $red);
     text-transform: uppercase;
     background: #fff;
     padding: 0.8rem 1.6rem;
     border-radius: 2rem;
 
     strong {
-      color: $purple;
+      color: $red;
       font-weight: 900;
     }
   }
 }
 
 .phaseContents {
-  height: 93vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0 2rem 0;
+  padding: 0rem 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
   .contents {
     display: block;
@@ -52,26 +110,46 @@
 }
 
 .questionSlide {
-  background: #fff;
-  border-radius: 2rem;
+  background: linear-gradient(
+    89.44deg,
+    rgba(213, 213, 213, 0.91) 0.34%,
+    rgba(244, 244, 244, 0.76) 36.58%,
+    rgba(168, 168, 168, 0.96) 69.71%,
+    #d5d5d5 99.73%
+  );
   flex-grow: 2;
-  width: 80%;
+  width: calc(100% - 38rem);
   max-width: 180rem;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
-  box-shadow: 0 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
   position: relative;
-  text-align: center;
-  padding: 0 2rem;
+  text-align: left;
+  padding: 3rem 5rem;
+
+  &:before {
+    content: '';
+    height: 0.5rem;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      89.44deg,
+      rgba(213, 213, 213, 0.91) 0.34%,
+      rgba(244, 244, 244, 0.76) 36.58%,
+      rgba(168, 168, 168, 0.96) 69.71%,
+      #d5d5d5 99.73%
+    );
+  }
 
   > * {
     z-index: 2;
   }
 
   .questionText {
-    @include lato(4.5rem, 900, $navy);
+    @include raleway(4.7rem, 700, $black);
     margin-bottom: 2rem;
   }
 
@@ -97,25 +175,68 @@
     padding-top: 2rem;
 
     li {
-      @include lato(3.5rem, 700, $purple);
+      @include raleway(3.5rem, 700, $red);
       margin-bottom: 2rem;
     }
   }
 
-  .decorator {
-    position: absolute;
-    z-index: 1;
+  &.imageSlide {
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+      order: 1;
+      max-width: 60%;
+      margin-right: 2rem;
+      order: 1;
+    }
+
+    .questionText {
+      order: 2;
+    }
+  }
+
+  &.audioSlide {
+    justify-content: center;
+    text-align: center;
+
+    > * {
+      width: 100%;
+      margin: 0 auto 2rem;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.videoSlide {
+    padding-top: 10rem;
   }
 }
 
 .sliderSlide {
-  height: 85vh;
+  height: calc(100vh - 30rem);
   display: flex !important;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
+
+  .slideTitle {
+    @include rubik(1.9rem, $copy);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 5rem 0;
+    text-align: left;
+
+    strong {
+      color: $red;
+    }
+  }
 
   &:focus {
     outline: 0;
@@ -123,11 +244,122 @@
 }
 
 :global(.slick-next) {
-  right: 2rem;
+  right: 0rem;
   z-index: 10;
+  text-indent: 0;
+  @include rubik(1.6rem, $white);
+  display: flex;
+  height: 4.6rem;
+  width: 14rem;
+  border: 1px solid $white;
+  background: linear-gradient(
+    to right,
+    rgba(79, 79, 79, 0),
+    rgba(79, 79, 79, 0),
+    rgba(250, 250, 250, 0.5)
+  );
+  border: 1px solid #646464;
+  transition: all 200ms ease-out;
+
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    content: '';
+    width: 0.8rem;
+    height: 100%;
+    position: absolute;
+    right: -1.4rem;
+    background: rgba(250, 250, 250, 0.5);
+    top: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include rubik(1.6rem, $white);
+    background: linear-gradient(
+      to right,
+      rgba(79, 79, 79, 0),
+      rgba(250, 250, 250, 0.5)
+    );
+  }
 }
 
 :global(.slick-prev) {
-  left: 2rem;
+  left: 0rem;
   z-index: 10;
+  text-indent: 0;
+  @include rubik(1.6rem, $white);
+  display: flex;
+  height: 4.6rem;
+  width: 14rem;
+  border: 1px solid $white;
+  background: linear-gradient(
+    to left,
+    rgba(79, 79, 79, 0),
+    rgba(79, 79, 79, 0),
+    rgba(250, 250, 250, 0.5)
+  );
+  border: 1px solid #646464;
+  transition: all 200ms ease-out;
+
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    content: '';
+    width: 0.8rem;
+    height: 100%;
+    position: absolute;
+    left: -1.4rem;
+    background: rgba(250, 250, 250, 0.5);
+    top: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include rubik(1.6rem, $white);
+    background: linear-gradient(
+      to left,
+      rgba(79, 79, 79, 0),
+      rgba(250, 250, 250, 0.5)
+    );
+  }
+}
+
+.slidePosition {
+  position: fixed;
+  z-index: 2;
+  bottom: 7rem;
+  left: 5.5em;
+  width: calc(100% - 11rem);
+
+  .indicator {
+    position: absolute;
+    top: -2.5rem;
+    transform: translateX(-50%);
+    transition: left 200ms ease-out;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    background: $white;
+    height: 0.3rem;
+    background: linear-gradient(
+      89.96deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(240, 239, 239, 0.47) 27.6%,
+      rgba(166, 166, 166, 0.38) 64.06%,
+      rgba(232, 232, 232, 0.78) 98.96%
+    );
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+  }
 }

@@ -1,4 +1,4 @@
-@import "../../layoutStyles/helpers";
+@import '../../layoutStyles/helpers';
 
 .phase2 {
   width: 100%;
@@ -35,11 +35,11 @@
       top: 0;
       position: relative;
       text-decoration: none;
-      @include lato(2.7rem, 700, $navy);
+      @include raleway(2.7rem, 700, $white);
 
       &:global(.active) {
-        background: $purple;
-        color: $white;
+        background: $white;
+        color: $black;
       }
 
       &:hover {
