@@ -15,6 +15,12 @@ export const SLIDES = [
     answer: "Jeff Bezos avec $145.3 Milliards."
   },
   {
+    type: "question",
+    question: "Qui est l'homme le plus riche du monde ?",
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM&t=90',
+    answer: "Jeff Bezos avec $145.3 Milliards."
+  },
+  {
     type: "audio",
     question: "Nommez le groupe et le titre de cette chanson",
     audio: gaga,

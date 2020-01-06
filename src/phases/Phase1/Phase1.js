@@ -5,6 +5,7 @@ import { SLIDES } from "../../data/phase1";
 
 import layout from "../../layoutStyles/layout.module.scss";
 import Slides from "../../components/Slides/Slides";
+import TeamBar from "../../components/TeamBar/TeamBar";
 
 class Phase1 extends Component {
   state = {
@@ -23,17 +24,13 @@ class Phase1 extends Component {
     return (
       <Fragment>
         <div className={layout.phaseTitle}>
-          <h1>Manche 1</h1>
-          <p>
-            Question <strong>{this.state.activeSlide + 1}</strong>/
-            {SLIDES.length}
-          </p>
+          <TeamBar />
         </div>
         <div className={classnames(layout.phaseContents)}>
           <div className={layout.contents}>
             <Slider {...settings}>
               {SLIDES.map((slide, index) => (
-                <Slides slide={slide} key={slide.question + index} />
+                <Slides slide={slide} index={index} key={slide.question + index} />
               ))}
             </Slider>
           </div>
