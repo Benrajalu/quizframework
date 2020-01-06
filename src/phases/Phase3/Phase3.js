@@ -1,18 +1,23 @@
-import React, {Component, Fragment} from "react";
-import { NavLink, Route } from "react-router-dom";
+import React, { Component, Fragment } from 'react';
+import { NavLink, Route } from 'react-router-dom';
 import { isEmpty } from 'lodash';
-import TeamBar from "../../components/TeamBar/TeamBar";
-import Category from "../Phase2/Category";
+import TeamBar from '../../components/TeamBar/TeamBar';
+import Category from '../Phase2/Category';
 
-import { CATEGORIES } from "../../data/phase2";
+import { ITEMS } from '../../data/phase2';
 
-import layout from "../../layoutStyles/layout.module.scss";
-import styles from "../Phase2/Phase2.module.scss";
+import layout from '../../layoutStyles/layout.module.scss';
+import styles from '../Phase2/Phase2.module.scss';
 
 class Phase3 extends Component {
   render() {
     const { match } = this.props;
-    const availableCategories = CATEGORIES.filter(category => !isEmpty(category.questions.filter(question => question.replied === false)));
+    const availableCategories = ITEMS.filter(
+      category =>
+        !isEmpty(
+          category.questions.filter(question => question.replied === false)
+        )
+    );
     return (
       <Fragment>
         <div className={layout.phaseTitle}>

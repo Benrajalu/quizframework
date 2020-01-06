@@ -11,7 +11,7 @@
 
   .categories {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-self: center;
     width: 100%;
@@ -20,6 +20,14 @@
     li {
       padding: 0 1rem;
       flex-grow: 2;
+      width: calc((100% - 12rem) / 6);
+      background: linear-gradient(
+        180deg,
+        #202020 0%,
+        rgba(10, 10, 10, 0.54) 100%
+      );
+      border: 1px solid #404040;
+      margin: 0 1rem 2rem;
     }
     a {
       display: flex;

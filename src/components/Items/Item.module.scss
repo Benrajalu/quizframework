@@ -3,7 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: linear-gradient(180deg, #202020 0%, rgba(10, 10, 10, 0.54) 100%);
+  border: 1px solid #404040;
+  box-shadow: 0px 0px 4px rgba(125, 125, 125, 0.25);
 
   img {
     display: block;
@@ -12,9 +16,8 @@
   }
 
   &.small {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
     overflow: hidden;
     padding: 0.2rem;
     margin-right: 0.5rem;

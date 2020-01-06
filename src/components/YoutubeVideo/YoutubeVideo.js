@@ -8,11 +8,6 @@ function YoutubeVideo(props) {
   const { url } = props;
   const [isPlaying, togglePlay] = useState(false);
   const [currentURL, setURL] = useState('');
-  const [played, setPlayed] = useState(0);
-
-  const handleProgress = state => {
-    setPlayed(state.played);
-  };
 
   const onButtonClick = () => {
     currentURL === '' && setURL(url);
@@ -28,7 +23,6 @@ function YoutubeVideo(props) {
         loop={false}
         light={false}
         className={styles.player}
-        onProgress={handleProgress}
         width='100%'
         height='100%'
       />

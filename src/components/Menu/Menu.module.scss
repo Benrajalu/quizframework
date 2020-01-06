@@ -56,28 +56,6 @@
   align-items: center;
   position: relative;
 
-  .shopLink {
-    position: absolute;
-    right: 3rem;
-    top: 50%;
-    background: $copy;
-    padding: 1rem 2rem 1.3rem;
-    @include rubik(1.4rem, $black);
-    text-decoration: none;
-    border-radius: 2rem;
-    transform: translateY(-50%);
-    transition: all 200ms ease-out;
-
-    &:hover {
-      transform: translateY(-52%);
-    }
-
-    &:global(.active) {
-      background: $black;
-      color: #fff;
-    }
-  }
-
   .mainNav {
     display: flex;
     flex-flow: row;
@@ -89,11 +67,13 @@
       display: block;
       position: relative;
       line-height: 5.5rem;
-      width: 15rem;
+      width: 10rem;
+      display: flex;
+      flex-flow: row;
     }
 
     a {
-      @include rubik(2rem, #fff);
+      @include rubik(1rem, #fff);
       text-decoration: none;
       text-align: center;
       display: flex;
@@ -125,7 +105,7 @@
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%) translateY(8px);
+        transform: translateX(-50%) translateY(10px);
         border-radius: 100%;
         z-index: 2;
         box-sizing: border-box;
@@ -133,7 +113,7 @@
 
       &:global(.active) {
         &:before {
-          background: $black;
+          background: $red;
         }
       }
     }

@@ -32,18 +32,35 @@ class Menu extends Component {
         <nav className={style.entries}>
           <ul className={style.mainNav}>
             <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/store' className={style.shopLink}>
+                <span>
+                  <i className='fas fa-shopping-cart' /> Magasin
+                </span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
               <NavLink to='/' exact>
                 <span>Landing</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
               <NavLink to='/intro' exact>
-                <span>Manche 1</span>
+                <span>Intro</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to='/phase2'>
-                <span>Manche 2</span>
+              <NavLink to='/phase1' exact>
+                <span>Phase 1</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/phase1-scores' exact>
+                <span>Scores 1</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/intro2'>
+                <span>Phase 2</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
@@ -62,11 +79,6 @@ class Menu extends Component {
               </NavLink>
             </li>
           </ul>
-          <NavLink to='/store' className={style.shopLink}>
-            <span onClick={() => this.onClickhandler()}>
-              <i className='fas fa-shopping-cart' /> Magasin
-            </span>
-          </NavLink>
         </nav>
       </div>
     );
