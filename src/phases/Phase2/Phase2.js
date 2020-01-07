@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { NavLink, Route } from 'react-router-dom';
 import TeamBar from '../../components/TeamBar/TeamBar';
-import Category from './Category';
 
 import { ITEMS } from '../../data/phase2';
 import background from './phase2.jpg';
@@ -12,7 +10,6 @@ import styles from './Phase2.module.scss';
 
 class Phase2 extends Component {
   render() {
-    const { match } = this.props;
     return (
       <Fragment>
         <div
@@ -22,21 +19,19 @@ class Phase2 extends Component {
         <div className={layout.phaseContentsFull}>
           <TeamBar />
           <div className={styles.phase2}>
-            <ul className={styles.categories}>
+            <div className={styles.categories}>
               {ITEMS.map(item => (
-                <li key={item.name}>
-                  <p>
-                    {item.points} <img src={coin} alt='' />
+                <button key={item.name}>
+                  <p className={styles.points}>
+                    +{item.points} <img src={coin} alt='' />
                   </p>
                   <figure>
                     <img src={item.image} alt='' />
                   </figure>
                   <p>{item.name}</p>
-                </li>
+                </button>
               ))}
-            </ul>
-
-            <Route path={`${match.path}/:category`} component={Category} />
+            </div>
           </div>
         </div>
       </Fragment>
