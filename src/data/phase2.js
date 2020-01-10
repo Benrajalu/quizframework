@@ -16,7 +16,7 @@ export const ITEMS = [
     image: corkscrew,
     name: 'Tire-bouchons',
     points: 10,
-    question: 'Test texte de question',
+    question: 'Combien de bouteilles de vin vides dans le bac de tri ?',
     replied: false
   },
   {

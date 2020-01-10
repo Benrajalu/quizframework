@@ -64,12 +64,22 @@ class Menu extends Component {
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to='/phase3'>
+              <NavLink to='/phase1-scores' exact>
+                <span>Scores 2</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/intro3'>
                 <span>Manche 3</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to='/phase4'>
+              <NavLink to='/phase3'>
+                <span>Scores 3</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/intro4'>
                 <span>Manche 4</span>
               </NavLink>
             </li>

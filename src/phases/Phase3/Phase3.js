@@ -1,42 +1,36 @@
 import React, { Component, Fragment } from 'react';
-import { NavLink, Route } from 'react-router-dom';
-import { isEmpty } from 'lodash';
 import TeamBar from '../../components/TeamBar/TeamBar';
-import Category from '../Phase2/Category';
 
-import { ITEMS } from '../../data/phase2';
+import { SUSPECTS } from '../../data/phase3';
+import background from './phase3.png';
 
 import layout from '../../layoutStyles/layout.module.scss';
-import styles from '../Phase2/Phase2.module.scss';
+import styles from './Phase3.module.scss';
+import Witness from '../../components/Witness/Witness';
 
-class Phase3 extends Component {
+class Phase2 extends Component {
   render() {
-    const { match } = this.props;
-    const availableCategories = ITEMS.filter(
-      category =>
-        !isEmpty(
-          category.questions.filter(question => question.replied === false)
-        )
-    );
     return (
       <Fragment>
-        <div className={layout.phaseTitle}>
-          <h1>Manche 3</h1>
+        <div
+          className={layout.phaseBackgroundActive}
+          style={{ backgroundImage: `url(${background})` }}
+        ></div>
+        <div className={layout.phaseContentsFull}>
           <TeamBar />
-        </div>
-        <div className={layout.phaseContents}>
           <div className={styles.phase2}>
-            <ul className={styles.categories}>
-              {availableCategories.map(category => (
-                <li key={category.url}>
-                  <NavLink to={`${match.url}/${category.url}`}>
-                    {category.name}
-                  </NavLink>
-                </li>
+            <div className={styles.categories}>
+              {SUSPECTS.map(item => (
+                <Witness
+                  name={item.name}
+                  image={item.image}
+                  list={item.list}
+                  key={item.name}
+                  replied={item.replied}
+                  questions={item.questions}
+                />
               ))}
-            </ul>
-
-            <Route path={`${match.path}/:category`} component={Category} />
+            </div>
           </div>
         </div>
       </Fragment>
@@ -44,4 +38,4 @@ class Phase3 extends Component {
   }
 }
 
-export default Phase3;
+export default Phase2;

@@ -1,39 +1,100 @@
-import { NEWS } from "./categories/news";
-import { FILM } from "./categories/film";
-import { MUSIC } from "./categories/music";
-import { HISTORY } from "./categories/history";
-import { DIGITAL } from "./categories/digital";
-import { SPORT } from "./categories/sport";
+import neighbor from '../media/suspects/neighbor.png';
+import mayor from '../media/suspects/mayor.png';
+import doctor from '../media/suspects/doctor.png';
+import dealer from '../media/suspects/dealer.png';
+import coach from '../media/suspects/coach.png';
+import businessman from '../media/suspects/businessman.png';
 
-export const CATEGORIES = [
+import neighborQuestions from '../data/witnesses/neighbor';
+import mayorQuestions from '../data/witnesses/mayor';
+import doctorQuestions from '../data/witnesses/doctor';
+import dealerQuestions from '../data/witnesses/dealer';
+import coachQuestions from '../data/witnesses/coach';
+import businessmanQuestions from '../data/witnesses/businessman';
+
+export const SUSPECTS = [
   {
-    name: "Actualité",
-    url: "news",
-    questions: NEWS
+    image: neighbor,
+    name: 'La voisine',
+    id: 'neighbor',
+    list: [
+      '72 ans',
+      'Fan de TV',
+      'Connait tout le quartier',
+      'Pas de casier',
+      'Experte en infos'
+    ],
+    replied: false,
+    questions: neighborQuestions
   },
   {
-    name: "Ciné et TV",
-    url: "film",
-    questions: FILM
+    image: mayor,
+    name: 'Le Maire',
+    id: 'mayor',
+    list: [
+      '68 ans',
+      'Ex-Avocat',
+      'Ami de la victime',
+      'Accusé de corruption',
+      'Expert en politique'
+    ],
+    replied: false,
+    questions: mayorQuestions
   },
   {
-    name: "Musique",
-    url: "music",
-    questions: MUSIC
+    image: doctor,
+    name: 'Le medecin',
+    id: 'doctor',
+    list: [
+      '36 ans',
+      'Championne de volley',
+      'Voyait la victime le Jeudi',
+      'Pas de casier',
+      'Experte en sciences'
+    ],
+    replied: false,
+    questions: doctorQuestions
   },
   {
-    name: "Histoire Géo",
-    url: "history",
-    questions: HISTORY
+    image: dealer,
+    name: 'Le dealer',
+    id: 'dealer',
+    list: [
+      '21 ans',
+      'Etudiant',
+      'En contact avec la victime',
+      'Casier chargé',
+      'Expert en culture pop'
+    ],
+    replied: false,
+    questions: dealerQuestions
   },
   {
-    name: "Numérique",
-    url: "digital",
-    questions: DIGITAL
+    image: coach,
+    name: 'Le coach',
+    id: 'neighbor',
+    list: [
+      '27 ans',
+      'Fan de football',
+      'Voyait la victime le Mardi',
+      '2 ans de prison pour vol',
+      'Expert en sport'
+    ],
+    replied: false,
+    questions: coachQuestions
   },
   {
-    name: "Sport",
-    url: "sport",
-    questions: SPORT
+    image: businessman,
+    name: 'Le businessman',
+    id: 'businessman',
+    list: [
+      '32 ans',
+      'Fan de Star Wars',
+      'Neveu de la victime',
+      'Pas de casier',
+      'Expert en marques'
+    ],
+    replied: false,
+    questions: businessmanQuestions
   }
 ];

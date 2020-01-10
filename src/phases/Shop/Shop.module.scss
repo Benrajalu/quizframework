@@ -3,11 +3,13 @@
 .shopList {
   display: flex;
   flex-flow: row nowrap;
-  max-width: 180rem;
+  max-width: 230rem;
   padding: 3rem 0;
   max-height: 80vh;
   overflow: auto;
   flex-grow: 1;
+  margin: 0 auto;
+  width: 100%;
 
   > li {
     width: calc(33% - 2rem);

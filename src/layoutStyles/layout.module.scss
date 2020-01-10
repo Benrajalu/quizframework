@@ -259,6 +259,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 2rem 0;
 
   .slideTitle {
     @include rubik(1.9rem, $copy);

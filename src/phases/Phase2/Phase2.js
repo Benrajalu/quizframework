@@ -3,10 +3,10 @@ import TeamBar from '../../components/TeamBar/TeamBar';
 
 import { ITEMS } from '../../data/phase2';
 import background from './phase2.jpg';
-import coin from '../../layoutStyles/coin.png';
 
 import layout from '../../layoutStyles/layout.module.scss';
 import styles from './Phase2.module.scss';
+import ItemQuestion from '../../components/ItemQuestion/ItemQuestion';
 
 class Phase2 extends Component {
   render() {
@@ -21,15 +21,14 @@ class Phase2 extends Component {
           <div className={styles.phase2}>
             <div className={styles.categories}>
               {ITEMS.map(item => (
-                <button key={item.name}>
-                  <p className={styles.points}>
-                    +{item.points} <img src={coin} alt='' />
-                  </p>
-                  <figure>
-                    <img src={item.image} alt='' />
-                  </figure>
-                  <p>{item.name}</p>
-                </button>
+                <ItemQuestion
+                  name={item.name}
+                  image={item.image}
+                  points={item.points}
+                  question={item.question}
+                  replied={item.replied}
+                  key={item.name}
+                />
               ))}
             </div>
           </div>
