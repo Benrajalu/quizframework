@@ -64,7 +64,7 @@ class Menu extends Component {
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to='/phase1-scores' exact>
+              <NavLink to='/phase2-scores' exact>
                 <span>Scores 2</span>
               </NavLink>
             </li>
@@ -74,7 +74,7 @@ class Menu extends Component {
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to='/phase3'>
+              <NavLink to='/phase3-scores'>
                 <span>Scores 3</span>
               </NavLink>
             </li>
@@ -84,8 +84,8 @@ class Menu extends Component {
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to='/rankings' exact>
-                <span>Classement</span>
+              <NavLink to='/case' exact>
+                <span>Accusations</span>
               </NavLink>
             </li>
           </ul>

@@ -23,6 +23,40 @@
     }
   }
 
+  .finalTitle {
+    text-align: center;
+    @include rubik(9.2rem, $white);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    p {
+      @include raleway(2.8rem, 400, $white);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      @include raleway(3.2rem, 700, $white);
+      padding-top: 3rem;
+
+      li {
+        margin-bottom: 2rem;
+      }
+    }
+
+    + a {
+      margin: 0 auto;
+    }
+  }
+
   a {
     @extend %button;
   }
@@ -365,6 +399,10 @@
       rgba(250, 250, 250, 0.5)
     );
   }
+}
+
+:global(.slick-disabled) {
+  opacity: 0.3;
 }
 
 .slidePosition {

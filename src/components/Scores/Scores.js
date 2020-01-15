@@ -7,20 +7,31 @@ import classnames from 'classnames';
 import { TEAMS } from '../../data/teams';
 import styles from './Scores.module.scss';
 import coin from '../../layoutStyles/coin.png';
+import star from './sherif.png';
 
 function Scores(props) {
-  const { title, next } = props;
+  const { title, next, finish } = props;
 
   const orderedTeams = reverse(sortBy(TEAMS, ['points']));
 
   return (
     <div className={styles.scores}>
       <h1 className={styles.title}>
-        {title} <span>Mission accomplie | Scores | indices</span>
+        {title} <span>Mission accomplie | Scores {!finish && '| indices'}</span>
       </h1>
-      <ul className={styles.table}>
+      <ul
+        className={classnames(styles.table, {
+          [styles.finish]: finish
+        })}
+      >
         {orderedTeams.map((team, index) => (
-          <li key={team.name} className={styles.line}>
+          <li
+            key={team.name}
+            className={classnames(styles.line, {
+              [styles.first]: index === 0
+            })}
+          >
+            {index === 0 && <img src={star} alt='' />}
             <div className={classnames(styles.number, [styles[team.name]])}>
               #{index + 1}
             </div>
@@ -33,21 +44,28 @@ function Scores(props) {
           </li>
         ))}
       </ul>
-      <ul className={styles.links}>
-        <li>
-          <Link to='/store'>Shop</Link>
-        </li>
-        <li>
-          <Link to={next}>Next</Link>
-        </li>
-      </ul>
+      {!finish && (
+        <ul className={styles.links}>
+          <li>
+            <Link to='/store'>Shop</Link>
+          </li>
+          <li>
+            <Link to={next}>Next</Link>
+          </li>
+        </ul>
+      )}
     </div>
   );
 }
 
+Scores.defaultProps = {
+  finish: false
+};
+
 Scores.propTypes = {
   title: PropTypes.string.isRequired,
-  next: PropTypes.string.isRequired
+  next: PropTypes.string.isRequired,
+  finish: PropTypes.bool
 };
 
 export default Scores;
