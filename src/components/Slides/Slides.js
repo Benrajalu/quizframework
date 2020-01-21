@@ -8,8 +8,8 @@ import YoutubeAudio from '../YoutubeAudio/YoutubeAudio';
 function Slides(props) {
   const {
     slide: { question, audio, image, choices, audioTube },
-    title,
-    index
+    index,
+    total,
   } = props;
 
   return (
@@ -21,7 +21,7 @@ function Slides(props) {
         })}
       >
         <h2 className={layout.slideTitle}>
-          {title}-<strong>{index}</strong>
+          {index}-<strong>{total}</strong>
         </h2>
         <p className={layout.questionText}>{question}</p>
         {audio && <ReactAudioPlayer src={audio} controls />}
@@ -41,8 +41,8 @@ function Slides(props) {
 
 Slides.propTypes = {
   slide: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired
+  index: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired
 };
 
 export default Slides;

@@ -1,35 +1,38 @@
-import React, {Component, Fragment} from "react";
-import { NavLink, Route } from "react-router-dom";
-import TeamBar from "../../components/TeamBar/TeamBar";
-import Category from "./Category";
-
-import { CATEGORIES } from "../../data/phase2";
+import React, { Component, Fragment } from "react";
+import Slider from "react-slick";
+import classnames from "classnames";
+import { SLIDES } from "../../data/phase1";
 
 import layout from "../../layoutStyles/layout.module.scss";
-import styles from "./Phase2.module.scss";
+import Slides from "../../components/Slides/Slides";
+import TeamBar from "../../components/TeamBar/TeamBar";
 
 class Phase2 extends Component {
+  state = {
+    activeSlide: 0
+  };
   render() {
-    const { match } = this.props;
+    const settings = {
+      dots: false,
+      infinite: false,
+      speed: 200,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      afterChange: current => this.setState({ activeSlide: current })
+    };
+
     return (
       <Fragment>
         <div className={layout.phaseTitle}>
-          <h1>Manche 2</h1>
           <TeamBar />
         </div>
-        <div className={layout.phaseContents}>
-          <div className={styles.phase2}>
-            <ul className={styles.categories}>
-              {CATEGORIES.map(category => (
-                <li key={category.url}>
-                  <NavLink to={`${match.url}/${category.url}`}>
-                    {category.name}
-                  </NavLink>
-                </li>
+        <div className={classnames(layout.phaseContents)}>
+          <div className={layout.contents}>
+            <Slider {...settings}>
+              {SLIDES.map((slide, index) => (
+                <Slides slide={slide} index={index + 1} key={slide.question + index} total={SLIDES.length}/>
               ))}
-            </ul>
-
-            <Route path={`${match.path}/:category`} component={Category} />
+            </Slider>
           </div>
         </div>
       </Fragment>

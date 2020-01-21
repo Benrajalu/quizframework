@@ -49,14 +49,14 @@ export const TEAMS = [
     items: []
   },
   {
-    name: "violet",
-    displayName: "Violet",
+    name: "brown",
+    displayName: "Brown",
     points: 0,
     items: []
   },
   {
-    name: "green",
-    displayName: "Verts",
+    name: "grey",
+    displayName: "Gris",
     points: 0,
     items: []
   },

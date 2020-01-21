@@ -23,14 +23,11 @@ class Phase1 extends Component {
 
     return (
       <Fragment>
-        <div className={layout.phaseTitle}>
-          <TeamBar />
-        </div>
         <div className={classnames(layout.phaseContents)}>
           <div className={layout.contents}>
             <Slider {...settings}>
               {SLIDES.map((slide, index) => (
-                <Slides slide={slide} index={index} key={slide.question + index} />
+                <Slides slide={slide} index={index + 1} key={slide.question + index} total={SLIDES.length}/>
               ))}
             </Slider>
           </div>

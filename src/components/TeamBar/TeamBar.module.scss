@@ -54,6 +54,14 @@
     justify-content: center;
     align-items: center;
     @include lato(2.4rem, 900, $white);
+    position: relative;
+
+    > img {
+      position: absolute;
+      top: -65%;
+      left: -20%;
+      width: 140%;
+    }
 
     p {
       text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
@@ -71,6 +79,28 @@
 
     &.green {
       background: linear-gradient(to bottom, $green, darken($green, 10%));
+    }
+
+    &.yellow {
+      background: linear-gradient(to bottom, #d9c53c, darken(#d9c53c, 10%));
+    }
+    &.black {
+      background: linear-gradient(to bottom, #000, lighten(#000, 10%));
+    }
+    &.orange {
+      background: linear-gradient(to bottom, #ff8d13, darken(#ff8d13, 10%));
+    }
+    &.purple {
+      background: linear-gradient(to bottom, #b133ff, darken(#b133ff, 10%));
+    }
+    &.pink {
+      background: linear-gradient(to bottom, #ff85af, darken(#ff85af, 10%));
+    }
+    &.brown {
+      background: linear-gradient(to bottom, #7a4737, darken(#7a4737, 10%));
+    }
+    &.grey {
+      background: linear-gradient(to bottom, #7c7c7c, darken(#7c7c7c, 10%));
     }
   }
 
