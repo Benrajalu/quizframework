@@ -116,8 +116,9 @@
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateX(-110%) translateY(-50%);
+        transform: translateX(-110%) translateY(-50%) rotateX(5deg);
         width: 6rem;
+        animation: turning 2000ms ease-in-out infinite;
       }
 
       .number {
@@ -147,5 +148,15 @@
     @extend %button;
     max-width: 15rem;
     margin: 0 auto;
+  }
+}
+
+@keyframes turning {
+  from {
+    transform: translateX(-110%) translateY(-50%) rotateY(-0deg);
+  }
+
+  to {
+    transform: translateX(-110%) translateY(-50%) rotateY(-360deg);
   }
 }

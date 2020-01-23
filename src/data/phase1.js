@@ -1,8 +1,3 @@
-import kiss from './media/kisskiss.mp3';
-import kinks from './media/kinks.mp3';
-import shelter from './media/shelter.mp3';
-import gaga from './media/gaga.mp3';
-import aicha from './media/aisha.mp3';
 import waldo from './media/waldo.jpg';
 import emile from './media/emile.jpg';
 import usualSuspects from './media/usualSuspects.jpeg';
@@ -27,12 +22,6 @@ export const SLIDES = [
     answer: 'Jeff Bezos avec $145.3 Milliards.'
   },
   {
-    type: 'audio',
-    question: 'Nommez le groupe et le titre de cette chanson',
-    audio: gaga,
-    answer: 'Queen - Radio Gaga'
-  },
-  {
     type: 'question',
     question: 'Qui est la femme la plus riche du monde ?',
     answer: 'Françoise Bettencourt Meyers avec $49.3 Milliards.'
@@ -49,21 +38,9 @@ export const SLIDES = [
     answer: 'Vichy.'
   },
   {
-    type: 'audio',
-    question: 'Quel groupe Anglais joue ce tube ?',
-    audio: kinks,
-    answer: 'The Kinks - You really got me'
-  },
-  {
     type: 'question',
     question: 'Quel artiste célèbre a créé le logo de Chupa Chups ?',
     answer: 'Salvador Dali'
-  },
-  {
-    type: 'qcm',
-    question: "Combien y a-t'il d'habitants au Mozambique ?",
-    choices: ['29,67 Millions', '32,89 Millions', '19,37 Millions'],
-    answer: [1]
   },
   {
     type: 'image',
@@ -75,12 +52,6 @@ export const SLIDES = [
     type: 'question',
     question: 'Qui a écrit "American Gods" ?',
     answer: 'Neil Gaiman'
-  },
-  {
-    type: 'audio',
-    question: 'Qui joue ce hit interplanetaire ?',
-    audio: kiss,
-    answer: 'Tarkan '
   },
   {
     type: 'question',
@@ -99,12 +70,6 @@ export const SLIDES = [
     answer: 'LVMH'
   },
   {
-    type: 'audio',
-    question: 'Trouvez le groupe et le nom de cette chanson',
-    audio: shelter,
-    answer: 'The Rolling Stones - Gimme Shelter'
-  },
-  {
     type: 'question',
     question:
       'Combien coûte un sandwich triangle genre jambon-fromage au wagon bar SNCF ?',
@@ -114,12 +79,6 @@ export const SLIDES = [
     type: 'question',
     question: 'En quelle année a été signé le traité de Rome ?',
     answer: '1958'
-  },
-  {
-    type: 'audio',
-    question: 'Sans fautes, le nom du chanteur et le titre de cette chanson ?',
-    audio: aicha,
-    answer: 'Khaled - Aicha'
   },
   {
     type: 'question',

@@ -220,6 +220,7 @@
   .questionText {
     @include raleway(4.7rem, 700, $black);
     margin-bottom: 2rem;
+    line-height: 1.5em;
   }
 
   img {

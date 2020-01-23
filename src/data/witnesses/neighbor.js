@@ -17,13 +17,13 @@ const questions = [
   },
   {
     type: 'question',
-    question: "Qui est l'homme le plus riche du monde ?",
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
+    question: "Avant Boris Johnsson, elle dirigeait le gouvernement Britannique.",
+    answer: 'Qui est Theresa May ?'
   },
   {
     type: 'question',
-    question: "Qui est l'homme le plus riche du monde ?",
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
+    question: "Il est aujourd'hui fixé à 62 ans.",
+    answer: 'Quel est l\'age minimal legal de départ à la retraite taux plein aujourd\'hui ?'
   },
   {
     type: 'question',
