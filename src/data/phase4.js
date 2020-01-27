@@ -1,66 +1,262 @@
-import futurama from "./media/futurama.mp3";
-import bashung from "./media/bashung.mp3";
-import hubert from "./media/hubert.mp3";
-import bulbi from "./media/bulbi.jpg";
-import meduse from "./media/meduse.jpg";
-import celetse from "./media/celeste.jpg";
+import laputa from './media/laputa.jpg';
 
 export const SLIDES = [
   {
-    type: "question",
-    question: "Comment s'appelle la technique de cristallisation du chocolat ?",
-    answer: "Le tempérage"
+    type: 'question',
+    question:
+      'Quel acteur tenait le rôle de Tony Stark dans le Marvel Cinematic Universe ?',
+    answer: 'Robert Downey Jr.'
   },
   {
-    type: "audio",
-    question: "De quelle série est-ce le générique ?",
-    audio: futurama,
-    answer: "Futurama"
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
   },
   {
-    type: "image",
-    question: "Comment se nomme ce Pokémon ?",
-    image: bulbi,
-    answer: "Bulbizarre"
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
   },
   {
-    type: "question",
-    question: "Combien d'abonnés (à 1 million près) a la chaine youtube T-Series, la plus suivie au monde ?",
-    answer: "99 millions"
+    type: 'question',
+    question: 'Quelles sont les 4 maisons de Poudlard ?',
+    answer:
+      'Gryffondor / Griffindor, Serpentard / Slythernin, Pouffesoufle / Hufflepuff, Serdaigle / Ravenclaw'
   },
   {
-    type: "image",
-    question: "Qui est ce personnage ?",
-    image: celetse,
-    answer: "Celeste, femme de Babar"
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
   },
   {
-    type: "audio",
-    question: "Quel est le vrai nom (sans faute) de ce grand espion Français ?",
-    audio: hubert,
-    answer: "Hubert Bonisseur de La Bath"
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
   },
   {
-    type: "question",
-    question: "Qui est apparu dans plus de trente films d'Alfred Hitchcock ?",
-    answer: "Alfred Hitchcock"
+    type: 'question',
+    question: 'Au tennis, en combien de sets gagants se jouent les tournois du Grand Chelem ?',
+    answer:
+      '2 pour les femmes, 3 pour les hommes'
   },
   {
-    type: "audio",
-    question: "Nommez l'artiste et le titre de la chanson",
-    audio: bashung,
-    answer: "Alain Bashung, Osez Joséphine"
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
   },
   {
-    type: "image",
-    question: "Quelle est la particularité de cette méduse ?",
-    image: meduse,
-    choices: ['Sa piqure est mortelle', 'Elle est immortelle', 'Elle produit de la lumière'],
-    answer: "Elle est immortelle (Turritopsis Nutricula, capable de redevenir polype)"
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
   },
   {
-    type: "question",
-    question: "De quelle couleur sont les questions \"Sport\" du Trivial Pursuit ?",
-    answer: "Orange"
+    type: 'question',
+    question: "Combien d'équipes sont en compétition dans le Ligue 1 de foot ?",
+    answer:
+      '20'
   },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Pour quelle série de livres l'auteur Philip Pullman est-il connu ?",
+    answer:
+      'La croisée des mondes'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: 'Quelle est la capitale de la Croatie ?',
+    answer:
+      'Zagreb'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Quel fruit est au centre d'une bataille annuelle traditionnelle à Buñol, en Espagne ?",
+    answer:
+      'La tomate'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Quelle prix récompense tous les quatre ans de un à quatre mathématiciens honorés par leur pairs ?",
+    answer:
+      'La médaille Fields'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Quelle série de jeux vidéo de science-fiction à la première personne a fait la renommée du studio Valve ?",
+    answer:
+      'Half Life'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Avant Tesla et Space X, Elon Musk a fait fortune avec une autre entreprise. Laquelle ?",
+    answer:
+      'PayPal'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Pour quelles série de romans s'est fait connaître l'auteur Stieg Larsson ?",
+    answer:
+      'Millennium'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Quelle émission de télé-réalité rassemble des candidats sur une île déserte et les soumet à des épreuves d'adresse et d'endurance ?",
+    answer:
+      'Koh Lanta'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Quelle avocate de télévision a fréquenté Lucy Liu et Robert Downey Jr ?",
+    answer:
+      'Ally Mc Beal'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: "Quel évenement motive l'agent spécial Fox Mudler à intégrer le FBI ?",
+    answer:
+      'La disparition de sa soeur'
+  },
+  {
+    type: 'image',
+    question: 'Quel est ce pont ?',
+    image: laputa,
+    answer: 'Le pont de la rivière Kwai'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  },
+  {
+    type: 'question',
+    question: 'Qui chante',
+    videoTube: 'https://www.youtube.com/watch?v=O4irXQhgMqg',
+    answer: 'Jeff Bezos avec $145.3 Milliards.'
+  }
 ];
