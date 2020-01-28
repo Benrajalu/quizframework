@@ -20,7 +20,7 @@ export const SUSPECTS = [
     list: [
       '72 ans',
       'Fan de TV',
-      'Connait tout le quartier',
+      'Connaît tout le quartier',
       'Pas de casier',
       'Experte en infos'
     ],
@@ -34,8 +34,8 @@ export const SUSPECTS = [
     list: [
       '68 ans',
       'Ex-Avocat',
-      'Ami de la victime',
-      'Accusé de corruption',
+      'Patron de la victime',
+      'Accusé de détournement',
       'Expert en politique'
     ],
     replied: false,
@@ -47,8 +47,8 @@ export const SUSPECTS = [
     id: 'doctor',
     list: [
       '36 ans',
-      'Championne de volley',
-      'Voyait la victime le Jeudi',
+      'Ex-championne de volley',
+      'Ancienne amie du lycée',
       'Pas de casier',
       'Experte en sciences'
     ],
@@ -61,7 +61,7 @@ export const SUSPECTS = [
     id: 'dealer',
     list: [
       '21 ans',
-      'Etudiant',
+      'Coursier à vélo',
       'En contact avec la victime',
       'Casier chargé',
       'Expert en culture pop'
@@ -72,7 +72,7 @@ export const SUSPECTS = [
   {
     image: coach,
     name: 'Le coach',
-    id: 'neighbor',
+    id: 'coach',
     list: [
       '27 ans',
       'Fan de football',
@@ -90,7 +90,7 @@ export const SUSPECTS = [
     list: [
       '32 ans',
       'Fan de Star Wars',
-      'Neveu de la victime',
+      "Camarade d'armée",
       'Pas de casier',
       'Expert en marques'
     ],

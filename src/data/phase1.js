@@ -1,4 +1,5 @@
 import laputa from './media/laputa.jpg';
+import jabba from './media/jabba.jpg';
 
 export const SLIDES = [
   {
@@ -27,15 +28,15 @@ export const SLIDES = [
   },
   {
     type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
+    question: 'Qui est ce personnage ?',
+    image: jabba,
+    answer: 'Jabba The Hutt'
   },
   {
     type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
+    question: 'Trouvez le nom du groupe et du morceau',
+    audioTube: 'https://www.youtube.com/watch?v=4fndeDfaWCg&t=6',
+    answer: 'Backstreet boys - I want it that way'
   },
   {
     type: 'question',
