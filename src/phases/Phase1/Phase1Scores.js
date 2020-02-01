@@ -13,7 +13,7 @@ class IntroP1 extends Component {
           style={{ backgroundImage: `url(${background})` }}
         ></div>
         <div className={layout.centeredContents}>
-          <Scores title='Course-poursuite' next='/intro2' />
+          <Scores title='Course-poursuite' next='/intro2' noClue />
         </div>
       </>
     );

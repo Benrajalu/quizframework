@@ -51,7 +51,7 @@ function Witness(props) {
           <button onClick={close}>Close</button>
           <div className={styles.slider}>
             <div className={styles.timer}>
-              <Timer initialTime={45000} direction='backward' lastUnit='s'>
+              <Timer initialTime={60000} direction='backward' lastUnit='s'>
                 {() => (
                   <React.Fragment>
                     <Timer.Seconds />

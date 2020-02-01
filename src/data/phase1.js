@@ -58,7 +58,7 @@ export const SLIDES = [
   },
   {
     type: 'question',
-    question: "Combien d'équipes sont en compétition dans le Ligue 1 de foot ?",
+    question: "Combien d'équipes sont en compétition dans la Ligue 1 de foot ?",
     answer:
       '20'
   },

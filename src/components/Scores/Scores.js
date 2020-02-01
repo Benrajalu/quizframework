@@ -10,14 +10,14 @@ import coin from '../../layoutStyles/coin.png';
 import star from './sherif.png';
 
 function Scores(props) {
-  const { title, next, finish } = props;
+  const { title, next, finish, noClue } = props;
 
   const orderedTeams = reverse(sortBy(TEAMS, ['points']));
 
   return (
     <div className={styles.scores}>
       <h1 className={styles.title}>
-        {title} <span>Mission accomplie | Scores {!finish && '| indices'}</span>
+        {title} <span>Mission accomplie | Scores {!finish || !noClue && '| indices'}</span>
       </h1>
       <ul
         className={classnames(styles.table, {
@@ -59,13 +59,15 @@ function Scores(props) {
 }
 
 Scores.defaultProps = {
-  finish: false
+  finish: false,
+  noClue: false
 };
 
 Scores.propTypes = {
   title: PropTypes.string.isRequired,
   next: PropTypes.string.isRequired,
-  finish: PropTypes.bool
+  finish: PropTypes.bool,
+  noClue: PropTypes.bool
 };
 
 export default Scores;
