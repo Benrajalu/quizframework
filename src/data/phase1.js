@@ -7,6 +7,7 @@ import stonehenge from './media/stonehenge.jpg';
 import footus from './media/footus.jpg';
 import cubitus from './media/cubitus.jpg';
 
+
 export const SLIDES = [
   {
     type: 'question',
@@ -69,7 +70,7 @@ export const SLIDES = [
   },
   {
     type: 'image',
-    question: 'A quel artiste ce logo de groupe fait-il référence ?',
+    question: 'A quel chanteur ce logo de groupe fait-il référence ?',
     image: stones,
     answer: 'Mick Jagger - Rolling Stones'
   },
@@ -93,7 +94,7 @@ export const SLIDES = [
   },
   {
     type: 'question',
-    question: "Trouvez le nom de l'artoste et du morceau",
+    question: "Trouvez le nom de l'artiste et du morceau",
     audioTube: 'https://www.youtube.com/watch?v=EgxHqMpK1Nw',
     answer: 'Avicii - Levels'
   },
@@ -146,122 +147,8 @@ export const SLIDES = [
   },
   {
     type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question:
-      'Quelle série de jeux vidéo de science-fiction à la première personne a fait la renommée du studio Valve ?',
-    answer: 'Half Life'
-  },
-  {
-    type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question:
-      'Avant Tesla et Space X, Elon Musk a fait fortune avec une autre entreprise. Laquelle ?',
-    answer: 'PayPal'
-  },
-  {
-    type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question:
-      "Pour quelles série de romans s'est fait connaître l'auteur Stieg Larsson ?",
-    answer: 'Millennium'
-  },
-  {
-    type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question:
-      "Quelle émission de télé-réalité rassemble des candidats sur une île déserte et les soumet à des épreuves d'adresse et d'endurance ?",
-    answer: 'Koh Lanta'
-  },
-  {
-    type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question:
-      'Quelle avocate de télévision a fréquenté Lucy Liu et Robert Downey Jr ?',
-    answer: 'Ally Mc Beal'
-  },
-  {
-    type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question:
-      "Quel évenement motive l'agent spécial Fox Mudler à intégrer le FBI ?",
-    answer: 'La disparition de sa soeur'
-  },
-  {
-    type: 'image',
-    question: 'Quel est ce pont ?',
-    image: laputa,
-    answer: 'Le pont de la rivière Kwai'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    audioTube: 'https://www.youtube.com/watch?v=BN1WwnEDWAM',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
-  },
-  {
-    type: 'question',
-    question: 'Qui chante',
-    videoTube: 'https://www.youtube.com/watch?v=O4irXQhgMqg',
-    answer: 'Jeff Bezos avec $145.3 Milliards.'
+    question: "Trouvez le nom de l'artiste et du morceau",
+    audioTube: 'https://www.youtube.com/watch?v=OPf0YbXqDm0',
+    answer: 'Mark Ronson - Uptown Funk'
   }
 ];
