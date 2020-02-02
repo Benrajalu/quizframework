@@ -50,7 +50,7 @@ class Menu extends Component {
             </li>
             <li onClick={() => this.onClickhandler()}>
               <NavLink to='/phase1' exact>
-                <span>Phase 1</span>
+                <span>Manche 1</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
@@ -60,7 +60,7 @@ class Menu extends Component {
             </li>
             <li onClick={() => this.onClickhandler()}>
               <NavLink to='/phase2'>
-                <span>Phase 2</span>
+                <span>Manche 2</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
@@ -81,6 +81,11 @@ class Menu extends Component {
             <li onClick={() => this.onClickhandler()}>
               <NavLink to='/phase4'>
                 <span>Manche 4</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/phase4-scores'>
+                <span>Scores 4</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>

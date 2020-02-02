@@ -20,6 +20,7 @@ import Shop from './phases/Shop/Shop';
 import Phase1Scores from './phases/Phase1/Phase1Scores';
 import Phase2Scores from './phases/Phase2/Phase2Scores';
 import Phase3Scores from './phases/Phase3/Phase3Scores';
+import Phase4Scores from './phases/Phase4/Phase4Scores';
 
 import styles from './App.module.scss';
 
@@ -41,6 +42,7 @@ class App extends Component {
           <Route path='/phase3-scores' component={Phase3Scores} />
           <Route path='/intro4' component={Intro4} />
           <Route path='/phase4' component={Phase4} />
+          <Route path='/phase4-scores' component={Phase4Scores} />
           <Route path='/case' component={Case} />
           <Route path='/rankings' component={Rankings} />
           <Route path='/store' component={Shop} />

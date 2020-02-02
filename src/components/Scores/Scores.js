@@ -17,7 +17,10 @@ function Scores(props) {
   return (
     <div className={styles.scores}>
       <h1 className={styles.title}>
-        {title} <span>Mission accomplie | Scores {!finish || !noClue && '| indices'}</span>
+        {title}{' '}
+        <span>
+          Mission accomplie | Scores {!finish && !noClue && '| indices'}
+        </span>
       </h1>
       <ul
         className={classnames(styles.table, {
