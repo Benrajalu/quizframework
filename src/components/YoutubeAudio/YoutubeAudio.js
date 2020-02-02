@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 import classnames from 'classnames';
+import Duration from './Duration';
 
 import styles from './YoutubeAudio.module.scss';
 
@@ -9,9 +10,14 @@ function YoutubeAudio(props) {
   const [isPlaying, togglePlay] = useState(false);
   const [currentURL, setURL] = useState('');
   const [played, setPlayed] = useState(0);
+  const [duration, setDuration] = useState(0);
 
   const handleProgress = state => {
     setPlayed(state.played);
+  };
+
+  const handleDuration = duration => {
+    setDuration(duration);
   };
 
   const onButtonClick = () => {
@@ -29,6 +35,7 @@ function YoutubeAudio(props) {
         light={false}
         className={styles.hiddenIframe}
         onProgress={handleProgress}
+        onDuration={handleDuration}
       />
       <div className={styles.player}>
         <button
@@ -39,6 +46,7 @@ function YoutubeAudio(props) {
           {!isPlaying && <i className='fas fa-play' />}
         </button>
         <progress max={1} value={played} />
+        <Duration seconds={duration * played} />
       </div>
     </>
   );
