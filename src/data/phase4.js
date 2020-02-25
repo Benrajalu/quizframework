@@ -1,66 +1,47 @@
-import futurama from "./media/futurama.mp3";
-import bashung from "./media/bashung.mp3";
-import hubert from "./media/hubert.mp3";
-import bulbi from "./media/bulbi.jpg";
-import meduse from "./media/meduse.jpg";
-import celetse from "./media/celeste.jpg";
-
 export const SLIDES = [
   {
-    type: "question",
-    question: "Comment s'appelle la technique de cristallisation du chocolat ?",
-    answer: "Le tempérage"
+    question: 'Quel est le nom et le prénom du père de Batman ?',
+    answer: 'Thomas Wayne'
   },
   {
-    type: "audio",
-    question: "De quelle série est-ce le générique ?",
-    audio: futurama,
-    answer: "Futurama"
+    question: 'A quelle date a été créée la société iAdvize ?',
+    answer: '18/01/2010'
   },
   {
-    type: "image",
-    question: "Comment se nomme ce Pokémon ?",
-    image: bulbi,
-    answer: "Bulbizarre"
+    question: 'Quel artiste célèbre a créé le logo de Chupa Chups ?',
+    answer: 'Salvador Dali'
   },
   {
-    type: "question",
-    question: "Combien d'abonnés (à 1 million près) a la chaine youtube T-Series, la plus suivie au monde ?",
-    answer: "99 millions"
+    question: 'Complétez la citation',
+    videoTube: 'https://www.youtube.com/watch?v=BT5MAtVK474',
+    answer: "Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée… Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie… je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi…"
   },
   {
-    type: "image",
-    question: "Qui est ce personnage ?",
-    image: celetse,
-    answer: "Celeste, femme de Babar"
+    question: 'Que récompensent chaque année les Darwin Awards, créés aux États-Unis en 1993 ?',
+    answer: 'Les façons de mourir les plus idiotes'
   },
   {
-    type: "audio",
-    question: "Quel est le vrai nom (sans faute) de ce grand espion Français ?",
-    audio: hubert,
-    answer: "Hubert Bonisseur de La Bath"
+    question: "Trouvez le nom de l'artiste et du morceau",
+    audioTube: 'https://www.youtube.com/watch?v=cYQTL-ws6p4',
+    answer: 'The Stranglers - Always the Sun'
   },
   {
-    type: "question",
-    question: "Qui est apparu dans plus de trente films d'Alfred Hitchcock ?",
-    answer: "Alfred Hitchcock"
+    question: 'Quel est le record de la plus haute chute libre sans parachute auquel un humain a survécu ?',
+    choices: ['100 mètres', '1000 mètres', '10 000 mètres'],
+    answer: '10 000 mètres'
   },
   {
-    type: "audio",
-    question: "Nommez l'artiste et le titre de la chanson",
-    audio: bashung,
-    answer: "Alain Bashung, Osez Joséphine"
+    question: 'De quel dessin animé est tiré cet extrait ?',
+    audioTube: 'https://www.youtube.com/watch?v=ujUGovJW610',
+    answer: 'Oliver et Compagnie'
   },
   {
-    type: "image",
-    question: "Quelle est la particularité de cette méduse ?",
-    image: meduse,
-    choices: ['Sa piqure est mortelle', 'Elle est immortelle', 'Elle produit de la lumière'],
-    answer: "Elle est immortelle (Turritopsis Nutricula, capable de redevenir polype)"
+    question: 'Combien coûte un sandwich au jambon au wagon bar SNCF ?',
+    answer: "6,40€ https://lebar.sncf.com/"
   },
   {
-    type: "question",
-    question: "De quelle couleur sont les questions \"Sport\" du Trivial Pursuit ?",
-    answer: "Orange"
+    question: "Qu'est ce qui tue le plus chaque année ?",
+    choices: ['Les chutes de noix de coco', 'les attaques de requins', 'les chutes du lit'],
+    answer: "Les chutes de noix de coco, 150 vs 10 pour les requins"
   },
 ];

@@ -5,7 +5,6 @@ import { SLIDES } from "../../data/phase1";
 
 import layout from "../../layoutStyles/layout.module.scss";
 import Slides from "../../components/Slides/Slides";
-import TeamBar from "../../components/TeamBar/TeamBar";
 
 class Phase1 extends Component {
   state = {

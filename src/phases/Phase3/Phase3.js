@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Slider from "react-slick";
 import classnames from "classnames";
-import { SLIDES } from "../../data/phase1";
+import { SLIDES } from "../../data/phase3";
 
 import layout from "../../layoutStyles/layout.module.scss";
 import Slides from "../../components/Slides/Slides";

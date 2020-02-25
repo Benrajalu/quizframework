@@ -1,39 +1,48 @@
-import { NEWS } from "./categories/news";
-import { FILM } from "./categories/film";
-import { MUSIC } from "./categories/music";
-import { HISTORY } from "./categories/history";
-import { DIGITAL } from "./categories/digital";
-import { SPORT } from "./categories/sport";
-
-export const CATEGORIES = [
+export const SLIDES = [
   {
-    name: "Actualité",
-    url: "news",
-    questions: NEWS
+    question: 'Qui a écrit American Gods ?',
+    answer: 'Neil Gaiman'
   },
   {
-    name: "Ciné et TV",
-    url: "film",
-    questions: FILM
+    question: "Complétez : C'est une blague ou ... ?",
+    answer: 'Une provocation'
   },
   {
-    name: "Musique",
-    url: "music",
-    questions: MUSIC
+    question: 'Quel est ce son ?',
+    audioTube: 'https://www.youtube.com/watch?v=DIxUScfOQwg',
+    answer: 'Boot-up Playstation 1'
   },
   {
-    name: "Histoire Géo",
-    url: "history",
-    questions: HISTORY
+    question: 'Complétez cet extrait',
+    videoTube: 'https://www.youtube.com/watch?v=uhQ9GIaYEng&t=22',
+    answer: "joyeux noel felix"
   },
   {
-    name: "Numérique",
-    url: "digital",
-    questions: DIGITAL
+    question: 'Combien pèse une fraise tagada Haribo ? (au gramme près)',
+    answer: '5,39gr'
   },
   {
-    name: "Sport",
-    url: "sport",
-    questions: SPORT
-  }
+    question: "Trouvez le nom de l'artiste et du morceau",
+    audioTube: 'https://www.youtube.com/watch?v=y6120QOlsfU',
+    answer: 'Darude - Sandstorm'
+  },
+  {
+    question: 'Rangez par taille croissante :',
+    choices: ['A / La taille de la tour eiffel en mètre', 'B / Le nombre de milliers de cheveux sur une tête en moyenne', 'C / Le poids de la baleine bleue la plus lourde jamais mesuré en tonne', 'D / Le nombre de secondes dans une minute'],
+    answer: 'D / Secondes 60  -> B / nombre de cheveux 100-150 -> C / Poids baleine 180 -> A / tour eiffel 300'
+  },
+  {
+    question: "Trouvez le nom de l'artiste et du morceau",
+    audioTube: 'https://www.youtube.com/watch?v=bnaTLcFpQnE',
+    answer: 'Manu Chao - Clandestino'
+  },
+  {
+    question: 'Qu\'est ce qu\'un spermophile ?',
+    answer: 'Une espèce d\'écureuil (aimer les graines)'
+  },
+  {
+    question: "Quelle était la capacité de stockage standard du premier iPod ?",
+    choices: ['500Mo', '2Go', '5Go', '10Go'],
+    answer: "5Go"
+  },
 ];
