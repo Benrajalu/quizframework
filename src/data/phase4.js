@@ -1,47 +1,47 @@
 export const SLIDES = [
   {
-    question: 'Quel est le nom et le prénom du père de Batman ?',
-    answer: 'Thomas Wayne'
+    question: 'Où se trouve la mer de tranquilité ?',
+    answer: 'Sur la Lune'
   },
   {
-    question: 'A quelle date a été créée la société iAdvize ?',
-    answer: '18/01/2010'
+    question: 'Trouver le plus grand anagramme avec les lettres : Julien Hervouet',
+    answer: 'Max 10 : enjoliveur, enjolivure, louveterie, évoluèrent'
   },
   {
-    question: 'Quel artiste célèbre a créé le logo de Chupa Chups ?',
-    answer: 'Salvador Dali'
+    question: "Nommez dans l'ordre le top 3 ATP actuel",
+    answer: 'Djokovic, Nadal, Federer'
   },
   {
-    question: 'Complétez la citation',
-    videoTube: 'https://www.youtube.com/watch?v=BT5MAtVK474',
-    answer: "Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres. Des gens qui m’ont tendu la main, peut-être à un moment où je ne pouvais pas, où j’étais seul chez moi. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée… Parce que quand on a le goût de la chose, quand on a le goût de la chose bien faite, le beau geste, parfois on ne trouve pas l’interlocuteur en face je dirais, le miroir qui vous aide à avancer. Alors ça n’est pas mon cas, comme je disais là, puisque moi au contraire, j’ai pu : et je dis merci à la vie, je lui dis merci, je chante la vie, je danse la vie… je ne suis qu’amour ! Et finalement, quand beaucoup de gens aujourd’hui me disent « Mais comment fais-tu pour avoir cette humanité ? », et bien je leur réponds très simplement, je leur dis que c’est ce goût de l’amour ce goût donc qui m’a poussé aujourd’hui à entreprendre une construction mécanique, mais demain qui sait ? Peut-être simplement à me mettre au service de la communauté, à faire le don, le don de soi…"
+    question: 'Complétez cette réplique : ',
+    videoTube: 'https://www.youtube.com/watch?v=RLY8rRkOLuA&t=51',
+    answer: "Non j'suis le pape et j'attends ma soeur"
   },
   {
-    question: 'Que récompensent chaque année les Darwin Awards, créés aux États-Unis en 1993 ?',
-    answer: 'Les façons de mourir les plus idiotes'
+    question: 'Quel personnage prénommé Balthazar est l’oncle maternel de Donald ?',
+    answer: 'Picsou'
   },
   {
     question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=cYQTL-ws6p4',
-    answer: 'The Stranglers - Always the Sun'
+    audioTube: 'https://www.youtube.com/watch?v=mE1NrTExx9U',
+    answer: 'Odezenne - Saxophone'
   },
   {
-    question: 'Quel est le record de la plus haute chute libre sans parachute auquel un humain a survécu ?',
-    choices: ['100 mètres', '1000 mètres', '10 000 mètres'],
-    answer: '10 000 mètres'
+    question: 'Quel peuple gaulois vivait sur le site de Nantes ?',
+    choices: ['Les naonètes', 'Les nameks', 'Les namnètes'],
+    answer: 'Namnètes'
   },
   {
-    question: 'De quel dessin animé est tiré cet extrait ?',
-    audioTube: 'https://www.youtube.com/watch?v=ujUGovJW610',
-    answer: 'Oliver et Compagnie'
+    question: "Trouvez le nom de l'artiste et du morceau",
+    audioTube: 'https://www.youtube.com/watch?v=yYvkICbTZIQ',
+    answer: 'The Beatles - Paperback Writer'
   },
   {
-    question: 'Combien coûte un sandwich au jambon au wagon bar SNCF ?',
-    answer: "6,40€ https://lebar.sncf.com/"
+    question: "Que doit faire Ariel pour rester humaine d'après le pacte d'Ursula ?",
+    answer: "Ariel doit recevoir un \"baiser d'amour véritable\" de la part d'Éric"
   },
   {
-    question: "Qu'est ce qui tue le plus chaque année ?",
-    choices: ['Les chutes de noix de coco', 'les attaques de requins', 'les chutes du lit'],
-    answer: "Les chutes de noix de coco, 150 vs 10 pour les requins"
+    question: 'A quel étage se situe le bar "Le Nid" de la tour de bretagne ?',
+    choices: ['28', '30', '32', '34'],
+    answer: "32"
   },
 ];
