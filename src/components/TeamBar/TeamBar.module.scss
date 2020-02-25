@@ -107,7 +107,7 @@
   &.full {
     width: 50rem;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     align-items: center;
 
     .items {
@@ -121,6 +121,7 @@
       align-items: center;
       justify-content: center;
       margin-right: 0;
+      width: 25%;
     }
 
     .data {
@@ -149,19 +150,6 @@
 
       .name {
         font-size: 3.5rem;
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: -2.5rem;
-        left: 50%;
-        margin: 0 auto;
-        background: url('../../crown.png') center center;
-        background-size: cover;
-        width: 16.4rem;
-        height: 7.4rem;
-        animation: dance 2s linear infinite alternate-reverse;
       }
     }
 

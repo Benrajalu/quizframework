@@ -4,10 +4,11 @@ import ReactAudioPlayer from 'react-audio-player';
 import classnames from 'classnames';
 import layout from '../../layoutStyles/layout.module.scss';
 import YoutubeAudio from '../YoutubeAudio/YoutubeAudio';
+import YoutubeVideo from "../YoutubeVideo/YoutubeVideo";
 
 function Slides(props) {
   const {
-    slide: { question, audio, image, choices, audioTube },
+    slide: { question, audio, image, choices, audioTube, videoTube},
     index,
     total,
   } = props;
@@ -26,6 +27,7 @@ function Slides(props) {
         <p className={layout.questionText}>{question}</p>
         {audio && <ReactAudioPlayer src={audio} controls />}
         {audioTube && <YoutubeAudio url={audioTube} />}
+        {videoTube && <YoutubeVideo url={videoTube} />}
         {image && <img src={image} alt='' />}
         {choices && (
           <ul className={layout.choices}>

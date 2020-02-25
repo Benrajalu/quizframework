@@ -62,11 +62,13 @@ class Menu extends Component {
               </NavLink>
             </li>
           </ul>
-          <NavLink to="/store" className={style.shopLink}>
+          {
+          /*<NavLink to="/store" className={style.shopLink}>
             <span onClick={() => this.onClickhandler()}>
               <i className="fas fa-shopping-cart" /> Magasin
             </span>
-          </NavLink>
+          </NavLink>*/
+          }
         </nav>
       </div>
     );
