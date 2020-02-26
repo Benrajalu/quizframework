@@ -13,11 +13,9 @@ class IntroP1 extends Component {
       >
         <div className={layout.introTitle}>
           <h1>
-            Someone
+            Qui a tué
             <br />
-            has
-            <br />
-            died
+            Bruno <br /> McCain
           </h1>
           <p>Un quiz-enquête</p>
         </div>

@@ -2,18 +2,18 @@ const questions = [
   {
     type: 'question',
     question:
-      'Ce club de foot de la capitale est le deuxième plus vieux club Français',
+      'Ce club de foot de la capitale est le deuxième plus vieux club Français.',
     answer: "Qu'est ce que le Red Star F.C.?"
   },
   {
     type: 'question',
-    question: 'Ce tennisman Espagnol est numéro un mondial.',
-    answer: 'Qui est Rafael Nadal ?'
+    question: 'Ce tennisman Serbe est numéro un mondial.',
+    answer: 'Qui est Novak Djokovic ?'
   },
   {
     type: 'question',
     question:
-      "Cette grande finale d'une compétition Américaine rassemble chaque année plus de 95 millions de téléspectateurs",
+      "Cette grande finale d'une compétition Américaine rassemble chaque année plus de 95 millions de téléspectateurs.",
     answer: "Qu'est ce que le superbowl ?"
   },
   {
@@ -37,7 +37,7 @@ const questions = [
   {
     type: 'question',
     question:
-      "Mélange de danse et de combat, ce sport brésilien trouve ses origines dans l'esclavage",
+      "Mélange de danse et de combat, ce sport brésilien trouve ses origines dans l'esclavage.",
     answer: "Qu'est ce que la Capoeira ?"
   },
   {

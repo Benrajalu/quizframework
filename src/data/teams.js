@@ -2,21 +2,21 @@
 export const TEAMS = [
   {
     name: 'red',
-    displayName: 'Rouges',
+    displayName: 'Red',
     points: 0,
     items: [],
     life: 100
   },
   {
     name: 'blue',
-    displayName: 'Bleus',
+    displayName: 'Blue',
     points: 0,
     items: [],
     life: 100
   },
   {
     name: 'green',
-    displayName: 'Verts',
+    displayName: 'Green',
     points: 0,
     items: [],
     life: 100

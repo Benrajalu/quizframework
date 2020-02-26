@@ -13,7 +13,7 @@ export const SHOPDATA = [
   {
     name: 'Café serré',
     image: cafe,
-    cost: 30,
+    cost: 10,
     available: 3,
     description: 'Doublez vos gains sur une réponse'
   },

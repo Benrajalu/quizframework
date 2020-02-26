@@ -15,9 +15,8 @@ export const ITEMS = [
   {
     image: corkscrew,
     name: 'Tire-bouchons',
-    points: 10,
-    question:
-      'Combien de bouteilles de vin vides avons-nous dans le bac de tri ?',
+    points: 15,
+    question: 'Combien de "boucles" en metal sont-elles sur ce tire-bouchons ?',
     replied: false
   },
   {
@@ -30,15 +29,14 @@ export const ITEMS = [
   {
     image: portefeuille,
     name: 'Portefeuille',
-    points: 10,
-    question:
-      'Combien de cartes en tout genre sont-elles dans ce portefeuille ?',
+    points: 20,
+    question: 'Combien de cartes sont-elles dans ce portefeuille ?',
     replied: false
   },
   {
     image: panier,
     name: 'Panier',
-    points: 10,
+    points: 15,
     question: 'Combien pèse ce panier, en grammes ?',
     replied: false
   },
@@ -46,21 +44,22 @@ export const ITEMS = [
     image: manette,
     name: 'Manette',
     points: 10,
-    question: 'Combien de manettes de jeu sont présentes dans ce salon ?',
+    question:
+      "Combien mesure en milimètres le coté le plus long d'une boite de jeu Switch ?",
     replied: false
   },
   {
     image: couteau,
     name: 'Couteau',
-    points: 10,
+    points: 15,
     question:
-      'Combien de couteaux propres sont-ils dans le tiroir de la cuisine ?',
+      'Combien de couteaux de table propres restent-ils dans le tiroir de la cuisine ?',
     replied: false
   },
   {
     image: coussin,
     name: 'Coussin',
-    points: 10,
+    points: 20,
     question:
       'Combien pèsent au total en grammes les coussins présents dans ce salon ?',
     replied: false
@@ -68,22 +67,22 @@ export const ITEMS = [
   {
     image: casserole,
     name: 'Casserole',
-    points: 10,
+    points: 15,
     question:
-      "En combien de temps, en secondes, l'eau dans cette casserole va bouillir ?",
+      "En combien de temps, en secondes, l'eau dans cette casserole va-t-elle bouillir ?",
     replied: false
   },
   {
     image: cachets,
     name: 'Cachets',
-    points: 10,
+    points: 15,
     question: 'Combien de cachets restent-ils dans cette boite ?',
     replied: false
   },
   {
     image: briquet,
     name: 'Briquet',
-    points: 10,
+    points: 20,
     question:
       "Combien de fois vais-je pouvoir faire fonctionner ce briquet avant d'échouer à obtenir une flamme ?",
     replied: false
@@ -98,7 +97,7 @@ export const ITEMS = [
   {
     image: boites,
     name: 'Boites',
-    points: 10,
+    points: 20,
     question:
       'Combien de noisettes puis-je mettre dans cette boite tupperware ?',
     replied: false
