@@ -2,61 +2,61 @@
 export const TEAMS = [
   {
     name: "red",
-    displayName: "Rouges",
+    displayName: "Hack The Button",
     points: 0,
     items: []
   },
   {
     name: "blue",
-    displayName: "Bleus",
+    displayName: "Gintos",
     points: 0,
     items: []
   },
   {
     name: "green",
-    displayName: "Verts",
+    displayName: "Les Cowboys de Tchernobyl",
     points: 0,
     items: []
   },
   {
     name: "yellow",
-    displayName: "Yellow",
+    displayName: "Bionateam",
     points: 0,
     items: []
   },
   {
     name: "black",
-    displayName: "Black",
+    displayName: "Join The Party",
     points: 0,
     items: []
   },
   {
     name: "orange",
-    displayName: "Orange",
+    displayName: "HeadShot",
     points: 0,
     items: []
   },
   {
     name: "purple",
-    displayName: "Purple",
+    displayName: "Support",
     points: 0,
     items: []
   },
   {
     name: "pink",
-    displayName: "Pink",
+    displayName: "Eddy de Pretto",
     points: 0,
     items: []
   },
   {
     name: "brown",
-    displayName: "Brown",
+    displayName: "Les Mates",
     points: 0,
     items: []
   },
   {
     name: "grey",
-    displayName: "Gris",
+    displayName: "Chacun Ses Serpillères",
     points: 0,
     items: []
   },

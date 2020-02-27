@@ -22,7 +22,7 @@ export const SLIDES = [
   },
   {
     question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=mE1NrTExx9U',
+    audioTube: 'https://www.youtube.com/watch?v=mE1NrTExx9U&t=91',
     answer: 'Odezenne - Saxophone'
   },
   {

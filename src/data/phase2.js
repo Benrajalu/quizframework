@@ -14,7 +14,7 @@ export const SLIDES = [
   },
   {
     question: 'Complétez cet extrait',
-    videoTube: 'https://www.youtube.com/watch?v=uhQ9GIaYEng&t=22',
+    videoTube: 'https://www.youtube.com/watch?v=uhQ9GIaYEng',
     answer: "joyeux noel felix"
   },
   {

@@ -32,7 +32,7 @@ export const SLIDES = [
   },
   {
     question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=aIXyKmElvv8',
+    audioTube: 'https://www.youtube.com/watch?v=aIXyKmElvv8&t=31',
     answer: 'Fugees - Ready or not'
   },
   {
