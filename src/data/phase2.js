@@ -14,8 +14,8 @@ export const SLIDES = [
   },
   {
     question: 'Complétez cet extrait',
-    videoTube: 'https://www.youtube.com/watch?v=uhQ9GIaYEng',
-    answer: "joyeux noel felix"
+    videoTube: 'https://www.youtube.com/watch?v=UYYwaFy05-U&list=PLMl4WmJENZ56p7DQRK88w3hEsVfOrKXjJ&t=80',
+    answer: "Ah bon il a pas de prénom ?"
   },
   {
     question: 'Combien pèse une fraise tagada Haribo ? (au gramme près)',
