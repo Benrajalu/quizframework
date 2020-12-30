@@ -1,48 +1,47 @@
 export const SLIDES = [
   {
-    question: 'Qui a écrit American Gods ?',
-    answer: 'Neil Gaiman'
+    question: 'Dans quel dessin animé un combat est gagné par un microbe contre un dragon ?',
+    answer: 'Merlin l\'enchanteur'
   },
   {
-    question: "Complétez : C'est une blague ou ... ?",
-    answer: 'Une provocation'
+    question: "De quel dessin animé vient cette chanson ?",
+    audioTube: 'https://www.youtube.com/watch?v=xAw1S7C1zjs',
+    answer: 'Mulan'
   },
   {
-    question: 'Quel est ce son ?',
-    audioTube: 'https://www.youtube.com/watch?v=DIxUScfOQwg',
-    answer: 'Boot-up Playstation 1'
+    question: 'Combien de fées marraines sont présentes dans La Belle au Bois Dormant de Disney ?',
+    answer: '3'
   },
   {
-    question: 'Complétez cet extrait',
-    videoTube: 'https://www.youtube.com/watch?v=uhQ9GIaYEng&t=22',
-    answer: "joyeux noel felix"
+    question: "De quel dessin animé vient cette chanson ?",
+    audioTube: 'https://youtu.be/Xq3W-J7CZdk?t=23',
+    answer: 'La Belle et la Bête'
   },
   {
-    question: 'Combien pèse une fraise tagada Haribo ? (au gramme près)',
-    answer: '5,39gr'
+    question: 'Nommez les 7 nains',
+    answer: 'Profs, Atchoum, Dormeur, Grincheux, Joyeux, Timide, Simplet'
   },
   {
-    question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=y6120QOlsfU',
-    answer: 'Darude - Sandstorm'
+    question: "Qui est l'interprète original de cette chanson ?",
+    audioTube: 'https://www.youtube.com/watch?v=8fEbXhFFp8Y',
+    answer: 'Henri Salvador'
   },
   {
-    question: 'Rangez par taille croissante :',
-    choices: ['A / La taille de la tour eiffel en mètre', 'B / Le nombre de milliers de cheveux sur une tête en moyenne', 'C / Le poids de la baleine bleue la plus lourde jamais mesuré en tonne', 'D / Le nombre de secondes dans une minute'],
-    answer: 'D / Secondes 60  -> B / nombre de cheveux 100-150 -> C / Poids baleine 180 -> A / tour eiffel 300'
+    question: 'Comment s\'appelle le prince dans La Reine des Neiges ?',
+    answer: 'Prince Hans'
   },
   {
-    question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=bnaTLcFpQnE',
-    answer: 'Manu Chao - Clandestino'
+    question: "De quel dessin animé vient cette chanson ?",
+    audioTube: 'https://youtu.be/_L8HUELtXBE?t=3',
+    answer: 'Raiponce'
   },
   {
-    question: 'Qu\'est ce qu\'un spermophile ?',
-    answer: 'Une espèce d\'écureuil (aimer les graines)'
+    question: 'Comment s\'appelle le père de Luke Skywalker ?',
+    answer: 'Anakin'
   },
   {
-    question: "Quelle était la capacité de stockage standard du premier iPod ?",
-    choices: ['500Mo', '2Go', '5Go', '10Go'],
-    answer: "5Go"
+    question: "De quel dessin animé vient cette chanson ?",
+    audioTube: 'https://youtu.be/OAhCfI5hLjU?t=6',
+    answer: 'Pocahontas'
   },
 ];

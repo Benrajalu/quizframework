@@ -10,6 +10,11 @@ import shape4 from '../../media/shape4.svg';
 import shape5 from '../../media/shape5.svg';
 import shape6 from '../../media/shape6.svg';
 
+import gift from '../../media/gift.svg';
+import gift2 from '../../media/gift2.svg';
+import santa from '../../media/santa.svg';
+import sock from '../../media/sock.svg';
+
 import styles from './ShapeChoice.module.scss';
 
 class ShapeChoice extends Component {
@@ -23,10 +28,10 @@ class ShapeChoice extends Component {
   render() {
     const { question, className } = this.props;
     const shapes = [
-      shape1,
-      shape2,
-      shape3,
-      shape4,
+      gift,
+      gift2,
+      santa,
+      sock,
       shape5,
       shape6,
     ];

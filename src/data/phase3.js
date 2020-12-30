@@ -1,47 +1,47 @@
 export const SLIDES = [
   {
-    question: 'Qui gouverne actuellement le Canada ?',
-    answer: 'Elizabeth II'
+    question: 'Qui est le sportif Français le plus titré ?',
+    answer: 'Antoine Albeau - Planche à voile'
   },
   {
-    question: 'En moyenne, combien de boissons chaudes sont distribués par les machines chaque jour ?',
-    answer: '430'
+    question: "Qui sont les trois acteurs derrière ce sketch ?",
+    audioTube: 'https://www.youtube.com/watch?v=jULvpMu8tnA',
+    answer: 'Didier Bourdon, Pascal Legitimus, Bernard Campan'
   },
   {
-    question: 'Quel est le plus grand fleuve du monde ?',
-    answer: "L'Amazone ou le Nil, deux réponses valides"
+    question: 'De combien est le record du 100m de Usain Bolt ?',
+    answer: '9.58 secondes'
   },
   {
-    question: 'Complétez la citation',
-    videoTube: 'https://www.youtube.com/watch?v=1qX4ITlLYrc',
-    answer: "Chut, il y a bambi qui fait dodo"
+    question: "Qui va pouvoir seconder le chef ?",
+    audioTube: 'https://youtu.be/mIixEqTU6gM?t=59',
+    answer: 'Sophie Pétoncule'
   },
   {
-    question: 'Quel est le nom du troisième jeu de la saga Zelda ?',
-    answer: 'A Link To The Past'
+    question: 'De quelle nationalité était Ayrton Senna ?',
+    answer: 'Brésilien'
   },
   {
-    question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=Wr9ie2J2690',
-    answer: 'Deep purple - Highway Star'
+    question: "Complétez cette réplique :",
+    audioTube: 'https://youtu.be/v0LoF3V9_ls?t=21',
+    answer: 'Eh bien elle est absoluement impeccable'
   },
   {
-    question: 'Expression quebecoise : que veut dire la "boucane"',
-    choices: ['La fumée', 'La voiture', 'Le vent'],
-    answer: 'La fumée'
+    question: 'En sport, qu\'est-ce qu\'un albatross ?',
+    answer: '3 sous le par en golf'
   },
   {
-    question: "Trouvez le nom de l'artiste et du morceau",
-    audioTube: 'https://www.youtube.com/watch?v=aIXyKmElvv8',
-    answer: 'Fugees - Ready or not'
+    question: "Nommez les deux personnages présents dans cette scène",
+    videoTube: 'https://youtu.be/cfgfQoN-zHk?t=13',
+    answer: 'Serge Karamazov et le Commissaire Bialès'
   },
   {
-    question: 'Compte est bon : trouvez 353 avec 100 2 15 3 1 9',
-    answer: "100 + 15 = 115 ; 115 x 3 = 345 ; 345 + 9 = 354; 354 - 1 = 353"
+    question: 'Qui a gagné le plus de titre du Grand Chelem entre Federer et Serena Williams ?',
+    answer: 'Serena Williams'
   },
   {
-    question: 'Expression quebecoise : que veut dire la "achaler"',
-    choices: ['Importuner', 'Mettre un chapeau', 'Tomber en étant alcoolisé'],
-    answer: "importuner"
+    question: "De quel film sont tirées ces répliques ?",
+    audioTube: 'https://youtu.be/Vni3gzzhRrA?t=10',
+    answer: 'Rabbi Jacob'
   },
 ];

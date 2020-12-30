@@ -40,8 +40,8 @@
   }
 
   .image4 {
-    bottom: 4rem;
-    left: 7rem;
+    bottom: 14rem;
+    left: 18rem;
   }
 
   .image5 {
@@ -57,7 +57,7 @@
 }
 
 :global(html) {
-  background: linear-gradient(to bottom, #327ad6, #2e5f9d);
+  background: linear-gradient(180deg, #b60000 0%, #810000 100%);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,0 +1,19 @@
+<svg width="103" height="78" viewBox="0 0 103 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="102.917" y="21.4573" width="56.4597" height="81.5529" rx="28.2299" transform="rotate(90 102.917 21.4573)" fill="#F7F5F6"/>
+<path d="M64.8668 18.6922C78.5478 15.8069 91.416 26.2443 91.416 40.2262V40.2262C91.416 52.3807 81.5628 62.2339 69.4083 62.2339L48.5111 62.2339C37.5603 62.2339 28.683 53.3566 28.683 42.4058V42.4058C28.683 33.032 35.2473 24.9388 44.4194 23.0045L64.8668 18.6922Z" fill="#E2E2E0"/>
+<circle cx="65.2773" cy="30.8675" r="26.1388" transform="rotate(90 65.2773 30.8675)" fill="#FF4E4E"/>
+<path d="M65.2771 4.72876L65.2771 32.9586L17.1818 21.5581L17.1818 4.72876L65.2771 4.72876Z" fill="#FF4E4E"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="17" y="4" width="49" height="29">
+<path d="M65.2771 4.729L65.2771 32.9589L17.1818 21.5583L17.1818 4.729L65.2771 4.729Z" fill="#FF4E4E"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M65.2773 14.1387L65.2773 -5.72679L17.182 2.2958L17.182 14.1387L65.2773 14.1387Z" fill="#EE2424"/>
+</g>
+<ellipse cx="12.9998" cy="13.6163" rx="13.0694" ry="12.5466" transform="rotate(90 12.9998 13.6163)" fill="#F7F5F6"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="39" y="4" width="53" height="54">
+<circle cx="65.2773" cy="30.8678" r="26.1388" transform="rotate(90 65.2773 30.8678)" fill="#FF4E4E"/>
+</mask>
+<g mask="url(#mask1)">
+<circle cx="78.3465" cy="13.6156" r="24.5704" transform="rotate(90 78.3465 13.6156)" fill="#EE2424"/>
+</g>
+</svg>

@@ -20,7 +20,7 @@ class TeamBar extends Component {
               <div className={classnames(styles.badge, styles[team.name])}>
                 <p className={styles.points}>{team.points}</p>
                 {index === 0 && <img src={crown} alt="" />}
-                {index === orderedTeams.length -1 && <img src={cap} alt="" />}
+                {/* {index === orderedTeams.length -1 && <img src={cap} alt="" />} */}
               </div>
             </div>
             <div className={styles.data}>
