@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import classnames from "classnames";
-import { NavLink } from "react-router-dom";
+import React, { Component } from 'react';
+import classnames from 'classnames';
+import { NavLink } from 'react-router-dom';
 
-import style from "./Menu.module.scss";
+import style from './Menu.module.scss';
 
 class Menu extends Component {
   state = {
@@ -24,49 +24,76 @@ class Menu extends Component {
       >
         <button onClick={() => this.onClickhandler()} className={style.button}>
           {this.state.isOpened ? (
-            <i className="fas fa-angle-down" />
+            <i className='fas fa-angle-down' />
           ) : (
-            <i className="fas fa-angle-up" />
+            <i className='fas fa-angle-up' />
           )}
         </button>
         <nav className={style.entries}>
           <ul className={style.mainNav}>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/" exact>
+              <NavLink to='/store' className={style.shopLink}>
+                <span>
+                  <i className='fas fa-shopping-cart' /> Magasin
+                </span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/' exact>
                 <span>Landing</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/phase1" exact>
+              <NavLink to='/intro' exact>
+                <span>Intro</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/phase1' exact>
                 <span>Manche 1</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/phase2">
+              <NavLink to='/phase1-scores' exact>
+                <span>Scores 1</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/phase2'>
                 <span>Manche 2</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/phase3">
+              <NavLink to='/phase2-scores' exact>
+                <span>Scores 2</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/phase3'>
                 <span>Manche 3</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/phase4">
+              <NavLink to='/phase3-scores'>
+                <span>Scores 3</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/phase4'>
                 <span>Manche 4</span>
               </NavLink>
             </li>
             <li onClick={() => this.onClickhandler()}>
-              <NavLink to="/rankings" exact>
-                <span>Classement</span>
+              <NavLink to='/phase4-scores'>
+                <span>Scores 4</span>
+              </NavLink>
+            </li>
+            <li onClick={() => this.onClickhandler()}>
+              <NavLink to='/case' exact>
+                <span>Accusations</span>
               </NavLink>
             </li>
           </ul>
-          <NavLink to="/store" className={style.shopLink}>
-            <span onClick={() => this.onClickhandler()}>
-              <i className="fas fa-shopping-cart" /> Magasin
-            </span>
-          </NavLink>
         </nav>
       </div>
     );

@@ -1,0 +1,162 @@
+@import '../../layoutStyles/helpers';
+
+.score {
+  display: flex;
+  flex-flow: column;
+}
+
+.title {
+  @include raleway(3.3rem, 400, $white);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+
+  span {
+    font-size: 2.4rem;
+    color: #dfdfdf;
+    line-height: 1;
+    margin-left: 1.3rem;
+  }
+}
+
+.table {
+  margin-bottom: 5rem;
+
+  .line {
+    display: flex;
+    flex-flow: row nowrap;
+    background: linear-gradient(
+      180deg,
+      #202020 0%,
+      rgba(10, 10, 10, 0.54) 100%
+    );
+    border: 1px solid #414141;
+    margin-bottom: 0.2rem;
+    height: 6.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    > img {
+      display: none;
+    }
+  }
+
+  .number {
+    @include raleway(2.2rem, 700, #a9a9a9);
+    width: 6.5rem;
+    text-align: center;
+    flex-grow: 0;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-right: 0.5rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0.1rem;
+      right: 0;
+      height: calc(100% - 0.2rem);
+      width: 0.5rem;
+    }
+
+    &.red {
+      &:after {
+        background: linear-gradient(180deg, #8b0000 0%, #690909 100%);
+      }
+    }
+
+    &.blue {
+      &:after {
+        background: linear-gradient(180deg, #114fc6 0%, #274989 100%);
+      }
+    }
+
+    &.green {
+      &:after {
+        background: linear-gradient(180deg, #029111 0%, #014108 100%);
+      }
+    }
+  }
+
+  .content {
+    width: 100rem;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    @include raleway(2.7rem, 400, $white);
+
+    span {
+      font-size: 3rem;
+      text-shadow: 0px 0px 4px rgba(210, 202, 202, 0.7);
+    }
+  }
+
+  &.finish {
+    .line {
+      width: 90%;
+      margin: 0 auto 0.2rem;
+    }
+
+    .line.first {
+      height: 8rem;
+      position: relative;
+      margin-bottom: 1rem;
+      width: 100%;
+
+      > img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateX(-110%) translateY(-50%) rotateX(5deg);
+        width: 6rem;
+        animation: turning 2000ms ease-in-out infinite;
+      }
+
+      .number {
+        font-size: 2.8rem;
+      }
+
+      .content {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+
+  li {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  a {
+    @extend %button;
+    max-width: 15rem;
+    margin: 0 auto;
+  }
+}
+
+@keyframes turning {
+  from {
+    transform: translateX(-110%) translateY(-50%) rotateY(-0deg);
+  }
+
+  to {
+    transform: translateX(-110%) translateY(-50%) rotateY(-360deg);
+  }
+}

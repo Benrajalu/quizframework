@@ -1,21 +1,24 @@
-// ["bow", "shield", "crystal", "letter", "sword", "poison"]
+// ['donuts', 'cafe', 'munitions']
 export const TEAMS = [
   {
-    name: "red",
-    displayName: "Rouges",
+    name: 'red',
+    displayName: 'Red',
     points: 0,
-    items: []
+    items: [],
+    life: 100
   },
   {
-    name: "blue",
-    displayName: "Bleus",
+    name: 'blue',
+    displayName: 'Blue',
     points: 0,
-    items: []
+    items: [],
+    life: 100
   },
   {
-    name: "green",
-    displayName: "Verts",
+    name: 'green',
+    displayName: 'Green',
     points: 0,
-    items: []
+    items: [],
+    life: 100
   }
 ];

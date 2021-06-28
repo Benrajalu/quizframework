@@ -1,4 +1,4 @@
-@import "../../layoutStyles/helpers";
+@import '../../layoutStyles/helpers';
 
 .rankings {
   display: flex;
@@ -8,7 +8,7 @@
   flex-grow: 2;
 
   > h1 {
-    @include marker(8rem, $white);
+    @include rubik(8rem, $white);
     margin-bottom: 4rem;
   }
 }

@@ -7,57 +7,8 @@
   overflow: auto;
 }
 
-.scene {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-
-  > img {
-    position: absolute;
-    animation: animate1 8s linear infinite alternate-reverse;
-  }
-
-  .image1 {
-    bottom: 2rem;
-    left: 3rem;
-    z-index: 2;
-    animation-duration: 12s;
-  }
-
-  .image2 {
-    bottom: 23rem;
-    left: 5rem;
-    animation: animate2 6s infinite alternate-reverse;
-  }
-
-  .image3 {
-    bottom: 9rem;
-    right: 2rem;
-    animation: animate2 10s infinite alternate-reverse;
-  }
-
-  .image4 {
-    bottom: 4rem;
-    left: 7rem;
-  }
-
-  .image5 {
-    bottom: 1rem;
-    left: 53rem;
-    animation: animate2 7s infinite alternate-reverse;
-  }
-
-  .image6 {
-    bottom: 1rem;
-    right: 2rem;
-  }
-}
-
 :global(html) {
-  background: linear-gradient(to bottom, #327ad6, #2e5f9d);
+  background: #252525;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;

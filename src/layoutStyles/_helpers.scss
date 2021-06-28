@@ -1,18 +1,39 @@
-@mixin marker($size, $color) {
-  font-family: "Permanent Marker", cursive;
+$white: #fff;
+$copy: #474747;
+$red: #8b0000;
+$black: #252525;
+
+@mixin rubik($size, $color) {
+  font-family: 'Rubik Mono One', cursive;
   font-size: $size;
   color: $color;
 }
 
-@mixin lato($size, $weight: 400, $color: #fff) {
-  font-family: "Lato", sans-serif;
+@mixin raleway($size, $weight: 400, $color: #fff) {
+  font-family: 'Raleway', sans-serif;
   font-size: $size;
   color: $color;
   font-weight: $weight;
 }
 
-$navy: #2c5fa0;
-$purple: #ec65aa;
-$blue: #8cd2fc;
-$white: #fff;
-$green: #3fd991;
+%button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include rubik(1.8rem, $white);
+  padding: 0.2rem 4rem 0;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    $red,
+    rgba(0, 0, 0, 0)
+  );
+  border: 0;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 200ms ease-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
